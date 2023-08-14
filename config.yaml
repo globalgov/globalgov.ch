@@ -24,10 +24,10 @@ menu:
 params:
   author: GLOBALGOV
   banner:
-    background_image: images/backgrounds/hero-background.jpg
+    background_image: images/backgrounds/earth_network.jpg
     enable: yes
     heading: Geneva Global Governance Observatory
-    primary_button: See Our Works
+    primary_button: See Our Blog Posts
     primary_button_url: portfolio
     secondary_button: Connect with Us
     secondary_button_url: contact

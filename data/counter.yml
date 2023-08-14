@@ -1,14 +1,14 @@
 enable : true
-heading : "THE PROOF IS IN THE PUDDING!"
+heading : "THE DATA"
 counter_item: 
-  - title: "Happy Clients"
-    number: "250"
+  - title: "Environmental Agreements"
+    number: "Over 7000 treaties"
 
-  - title: "Projects Completed"
-    number: "100"
+  - title: "Trade"
+    number: "A lot of data"
 
-  - title: "Cups of coffee"
-    number: "350"
+  - title: "States"
+    number: "Many states"
 
-  - title: "Telephone Talks"
-    number: "775"
+  - title: "Health"
+    number: "Some healthy stats..."
