@@ -1,0 +1,98 @@
+baseURL: http://globalgov.ch
+languageCode: en-us
+title: Geneva Global Governance Observatory
+theme: roxo-hugo
+summarylength: 25
+menu:
+  nav:
+    - name: Home
+      url: ''
+      weight: 1
+    - name: About
+      url: about
+      weight: 2
+    - name: Portfolio
+      url: portfolio
+      weight: 3
+    - name: Blog
+      url: blog
+      weight: 4
+    - name: Get in touch
+      url: contact
+      weight: 5
+params:
+  author: GLOBALGOV
+  banner:
+    background_image: images/backgrounds/hero-background.jpg
+    enable: yes
+    heading: Geneva Global Governance Observatory
+    primary_button: See Our Works
+    primary_button_url: portfolio
+    secondary_button: Connect with Us
+    secondary_button_url: contact
+    tagline: Welcome
+  call_to_action:
+    background_image: images/backgrounds/cta-background.jpg
+    enable: yes
+    primary_button: Submit Query
+    primary_button_url: contact
+    secondary_button: Not Convinced
+    secondary_button_url: portfolio
+    title: LET’S WORK TOGETHER
+  contactForm:
+    placeholder_about_the_project: About the Project
+    placeholder_email: Email
+    placeholder_first_name: First Name
+    placeholder_last_name: Last Name
+    placeholder_project_type: Project Type
+    projectType:
+      - title: Graphics Design
+        value: gd
+      - title: Web Design
+        value: wd
+    send_message: Send Message
+  dateFormat: 26 FEB 1994
+  description: The largest repository of Global Governance Data
+  fabform: https://fabform.io/f/USAg2Jl
+  footer:
+    contactInfo:
+      address: 713 Elmwood St.<br>Prior Lake, MN 55372
+      email: info@roxo.co
+      phone: 409-896-1444
+      title: Contact Info
+    service:
+      description: develop design solutions<br>produce valuable cultural content<br>create
+        fresh brand experience
+      title: 'We help brands:'
+    sitemap:
+      link:
+        - name: About Company
+          url: about
+        - name: Projects
+          url: portfolio
+        - name: Blog
+          url: blog
+        - name: Contact
+          url: contact
+      title: Sitemap
+    social:
+      link:
+        - name: Medium
+          url: '#'
+        - name: Behance
+          url: '#'
+        - name: Dribbble
+          url: '#'
+        - name: Instagram
+          url: '#'
+      title: Social Media
+  googleAnalitycsID: Your ID
+  logo: images/logo.png
+  navAction:
+    name: Get in touch
+    status: yes
+    url: contact
+  portfolio:
+    enable: yes
+    subtitle: Crafting experiences and seeking to make the complex clear & beautiful.
+    title: OUR RECENT WORKS
