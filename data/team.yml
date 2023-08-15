@@ -1,44 +1,23 @@
 enable  : true
-title   : Team that makes the difference.
+title   : Meet the GGO team
 members  :
-  - image       : images/team/team-member-one.jpg
-    name        : PABLO ESCOBAR
-    designation : Creative Director
-    medium      : https://www.medium.com/
-    linkedin    : https://www.linkedin.com/
-    instagram   : https://www.instagram.com/
+  - image       : images/team/james_hollway.jpg
+    name        : James Hollway
+    designation : Principal Investigator
+    website     : https://jameshollway.com/
+    linkedin    : https://www.linkedin.com/in/jhollway
+    github      : https://github.com/jhollway
 
-  - image       : images/team/team-member-two.jpg
-    name        : MONTINO RIAU
-    designation : Product Manager
-    medium      : https://www.medium.com/
-    linkedin    : https://www.linkedin.com/
-    instagram   : https://www.instagram.com/
+  - image       : images/team/henrique_sposito.jpg
+    name        : Henrique Sposito
+    designation : Reasearch Assistant
+    website     : https://henriquesposito.com/
+    linkedin    : https://www.linkedin.com/in/henrique-sposito-11b84282
+    github      : https://github.com/henriquesposito
 
-  - image       : images/team/team-member-three.jpg
-    name        : ALEX NAASRI
-    designation : Chief Design Officer
-    medium      : https://www.medium.com/
-    linkedin    : https://www.linkedin.com/
-    instagram   : https://www.instagram.com/
-
-  - image       : images/team/team-member-four.jpg
-    name        : HONGMAN CHIOA
-    designation : UX Researcher
-    medium      : https://www.medium.com/
-    linkedin    : https://www.linkedin.com/
-    instagram   : https://www.instagram.com/
-
-  - image       : images/team/team-member-five.jpg
-    name        : SANTIO ANDRESS
-    designation : Content Researcher
-    medium      : https://www.medium.com/
-    linkedin    : https://www.linkedin.com/
-    instagram   : https://www.instagram.com/
-
-  - image       : images/team/team-member-six.jpg
-    name        : RAMESH PAUL
-    designation : Creative Designer
-    medium      : https://www.medium.com/
-    linkedin    : https://www.linkedin.com/
-    instagram   : https://www.instagram.com/
+  - image       : images/team/JaelYiTan.jpg
+    name        : Jael Tan
+    designation : Research Assistant
+    website     : https://www.graduateinstitute.ch/discover-institute/jael-tan
+    linkedin    : https://www.linkedin.com/in/jael-t-a28967126
+    github      : https://github.com/jaeltan

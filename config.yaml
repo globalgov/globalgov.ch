@@ -12,7 +12,7 @@ menu:
     - name: About
       url: about
       weight: 2
-    - name: Portfolio
+    - name: Data
       url: portfolio
       weight: 3
     - name: Blog
@@ -27,10 +27,10 @@ params:
     background_image: images/backgrounds/earth_network.jpg
     enable: yes
     heading: Geneva Global Governance Observatory
-    primary_button: See Our Blog Posts
-    primary_button_url: portfolio
-    secondary_button: Connect with Us
-    secondary_button_url: contact
+    primary_button: Blog posts
+    primary_button_url: blog
+    secondary_button: GGO Data
+    secondary_button_url: portfolio
     tagline: Welcome
   call_to_action:
     background_image: images/backgrounds/cta-background.jpg
@@ -39,55 +39,46 @@ params:
     primary_button_url: contact
     secondary_button: Not Convinced
     secondary_button_url: portfolio
-    title: LET’S WORK TOGETHER
+    title: Do you have any questions or would like to contribute to the project? Please get in touch with us!
   contactForm:
-    placeholder_about_the_project: About the Project
+    placeholder_about_the_project: Message
     placeholder_email: Email
     placeholder_first_name: First Name
     placeholder_last_name: Last Name
-    placeholder_project_type: Project Type
-    projectType:
-      - title: Graphics Design
-        value: gd
-      - title: Web Design
-        value: wd
     send_message: Send Message
   dateFormat: 26 FEB 1994
   description: The largest repository of Global Governance Data
   fabform: https://fabform.io/f/USAg2Jl
   footer:
     contactInfo:
-      address: 713 Elmwood St.<br>Prior Lake, MN 55372
-      email: info@roxo.co
-      phone: 409-896-1444
+      email: info@globalgov.ch
       title: Contact Info
     service:
-      description: develop design solutions<br>produce valuable cultural content<br>create
-        fresh brand experience
-      title: 'We help brands:'
+      description: 'We also develop and maintain ‘many’ packages containing many related datasets on many issue-domains, actors, and institutions of global governance, see https://github.com/globalgov'
+      title: Providing data across various issue domains of Global Governance
     sitemap:
       link:
-        - name: About Company
+        - name: About
           url: about
-        - name: Projects
+        - name: Data
           url: portfolio
         - name: Blog
           url: blog
         - name: Contact
           url: contact
       title: Sitemap
-    social:
-      link:
-        - name: Medium
-          url: '#'
-        - name: Behance
-          url: '#'
-        - name: Dribbble
-          url: '#'
-        - name: Instagram
-          url: '#'
-      title: Social Media
-  googleAnalitycsID: Your ID
+    # social:
+    #   link:
+    #     - name: Medium
+    #       url: '#'
+    #     - name: Behance
+    #       url: '#'
+    #     - name: Dribbble
+    #       url: '#'
+    #     - name: Instagram
+    #       url: '#'
+    #   title: Social Media
+  #googleAnalitycsID: Your ID
   logo: images/logo.png
   navAction:
     name: Get in touch
@@ -95,5 +86,5 @@ params:
     url: contact
   portfolio:
     enable: yes
-    subtitle: Crafting experiences and seeking to make the complex clear & beautiful.
-    title: OUR RECENT WORKS
+    subtitle: Need data about Global Governance?
+    title: Data

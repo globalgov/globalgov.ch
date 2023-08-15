@@ -1,9 +1,9 @@
 enable : true
 heading : "THE DATA"
 counter_item: 
-  - title: "Environmental Agreements"
-    number: "Over 7000 treaties"
-
+  - title: "Environmental"
+    number: "Over 16000 observations across 6 datasets that overlap over 238 observations (4%)"
+    
   - title: "Trade"
     number: "A lot of data"
 
