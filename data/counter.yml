@@ -1,14 +1,11 @@
 enable : true
 heading : "THE DATA"
 counter_item: 
-  - title: "Environmental"
-    number: "Over 16000 observations across 6 datasets that overlap over 238 observations (4%)"
+  - title: "Environment"
+    number: "Over 16000 observations on environemntal agreements across 6 datasets (4% overlap)"
     
   - title: "Trade"
-    number: "A lot of data"
-
+    number: "Over 18000 observations on memberships to trade aggrements across 3 datasets (15% overlap)"
+    
   - title: "States"
-    number: "Many states"
-
-  - title: "Health"
-    number: "Some healthy stats..."
+    number: "Over 34000 observations on state regimes across 4 datasets (6% overlap)"
