@@ -1,0 +1,46 @@
+---
+title: manyenviron
+output: github_document
+category:
+- Data Packages
+image: images/blog/manyenviron_hexlogo.png
+project_images:
+- images/blog/manyenv_memb.png
+type: portfolio
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>",
+                      message = FALSE, warning = FALSE)
+options(rmarkdown.html_vignette.check_title = FALSE)
+```
+
+## Manyenviron Data
+
+`{manyenviron}` stores several datasets on various aspects of environmental treaties in different databases.
+For example, the **Agreements** database is made of multiple datasets of environmental treaty titles with
+specific information such as the agreement type (e.g. agreements, protocols, amendments, declarations), if
+they are bilateral or multilateral, and some important dates such as the signature or entry into force.
+The **Memberships** database contains lists of countries with the treaties to which they are parties to. It
+also includes information on the signature date of the treaty or the withdrawal date of a party.
+The **References** database is composed of a dataset that indicates the relationship (e.g. amended by,
+cites, superseded by) between two treaties.
+
+For a quick overview of the database and dataset in `{manyenviron}`, we can use the `compare_dimensions()` function from `{manydata}`.
+
+```{r, eval = FALSE}
+#remotes::install_github("globalgov/manyenviron")
+library(manydata)
+library(manyenviron)
+manydata::compare_dimensions(manyenviron::agreements)
+manydata::compare_dimensions(manyenviron::memberships)
+manydata::compare_dimensions(manyenviron::references)
+```
+
+To view the bibliographic references for a dataset, a database, or the whole package, we can also use `call_sources()` from `{manydata}`.
+
+```{r, eval = FALSE}
+manydata::call_sources("manyenviron", "agreements")
+manydata::call_sources("manyenviron", "memberships")
+manydata::call_sources("manyenviron", "references")
+```

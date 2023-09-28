@@ -3,44 +3,15 @@ feature_image: images/blog/manyenv_memb.png
 image: images/blog/manyenviron_hexlogo.png
 title: "How Do Environmental Treaties Connect?"
 authors: "James Hollway, Esther Peev, Henrique Sposito, and Bernhard Bieri"
-date: "2023-08-15"
+date: "2023-09-28"
 output: md_document
 ---
 
 
 
-## Manyenviron Data
-
-`{manyenviron}` stores several datasets on various aspects of environmental treaties in different databases.
-For example, the **Agreements** database is made of multiple datasets of environmental treaty titles with
-specific information such as the agreement type (e.g. agreements, protocols, amendments, declarations), if
-they are bilateral or multilateral, and some important dates such as the signature or entry into force.
-The **Memberships** database contains lists of countries with the treaties to which they are parties to. It
-also includes information on the signature date of the treaty or the withdrawal date of a party.
-The **References** database is composed of a dataset that indicates the relationship (e.g. amended by,
-cites, superseded by) between two treaties. Finally, the **Texts** database stores the text of
-environmental treaties.
-
-For a quick overview of the database and dataset in `{manyenviron}`, we can use the `data_contrast()` function from `{manydata}`.
-
-
-```r
-library(manydata)
-manydata::data_contrast("manyenviron", "agreements", "IEADB")
-manydata::data_contrast("manyenviron", "memberships")
-```
-
-To view the bibliographic references for a dataset, a database, or the whole package, we can also use `code_source()` from `{manydata}`.
-
-
-```r
-manydata::data_source("manyenviron", "agreements", "IEADB")
-manydata::data_source("manyenviron", "memberships")
-manydata::data_source("manyenviron")
-```
-
 ## Connecting Environmental Treaties
 
+`{manyenviron}` stores several datasets on environmental agreements, memeberships, and references in different databases. 
 There are many different ways in which treaties could be linked.
 For example, a treaty can be substituted by another, complemented by protocols,
 changed through amendments, and/or cite another treaty.
