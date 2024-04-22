@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us"><head>
   <meta charset="utf-8" />
-  <title>How Do Environmental Treaties Connect?</title>
+  <title></title>
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -102,130 +102,129 @@
     <div class="row justify-content-center">
       <div class="col-lg-8">
         <article class="site-blog-details">
-          <p><span>August 15, 2023</span> by <span></span></p>
-          <h2 class="blog-title">How Do Environmental Treaties Connect?</h2>
-          <img class="feature-image" src="http://globalgov.ch/images/blog/manyenv_memb.png" alt="blog-feature-image">
-          <h2 id="manyenviron-data">Manyenviron Data</h2>
-<p><code>{manyenviron}</code> stores several datasets on various aspects of environmental treaties in different databases.
-For example, the <strong>Agreements</strong> database is made of multiple datasets of environmental treaty titles with
-specific information such as the agreement type (e.g. agreements, protocols, amendments, declarations), if
-they are bilateral or multilateral, and some important dates such as the signature or entry into force.
-The <strong>Memberships</strong> database contains lists of countries with the treaties to which they are parties to. It
-also includes information on the signature date of the treaty or the withdrawal date of a party.
-The <strong>References</strong> database is composed of a dataset that indicates the relationship (e.g. amended by,
-cites, superseded by) between two treaties. Finally, the <strong>Texts</strong> database stores the text of
-environmental treaties.</p>
-<p>For a quick overview of the database and dataset in <code>{manyenviron}</code>, we can use the <code>data_contrast()</code> function from <code>{manydata}</code>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(manydata)
-</span></span><span style="display:flex;"><span>manydata<span style="color:#f92672">::</span><span style="color:#a6e22e">data_contrast</span>(<span style="color:#e6db74">&#34;manyenviron&#34;</span>, <span style="color:#e6db74">&#34;agreements&#34;</span>, <span style="color:#e6db74">&#34;IEADB&#34;</span>)
-</span></span><span style="display:flex;"><span>manydata<span style="color:#f92672">::</span><span style="color:#a6e22e">data_contrast</span>(<span style="color:#e6db74">&#34;manyenviron&#34;</span>, <span style="color:#e6db74">&#34;memberships&#34;</span>)
-</span></span></code></pre></div><p>To view the bibliographic references for a dataset, a database, or the whole package, we can also use <code>code_source()</code> from <code>{manydata}</code>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>manydata<span style="color:#f92672">::</span><span style="color:#a6e22e">data_source</span>(<span style="color:#e6db74">&#34;manyenviron&#34;</span>, <span style="color:#e6db74">&#34;agreements&#34;</span>, <span style="color:#e6db74">&#34;IEADB&#34;</span>)
-</span></span><span style="display:flex;"><span>manydata<span style="color:#f92672">::</span><span style="color:#a6e22e">data_source</span>(<span style="color:#e6db74">&#34;manyenviron&#34;</span>, <span style="color:#e6db74">&#34;memberships&#34;</span>)
-</span></span><span style="display:flex;"><span>manydata<span style="color:#f92672">::</span><span style="color:#a6e22e">data_source</span>(<span style="color:#e6db74">&#34;manyenviron&#34;</span>)
-</span></span></code></pre></div><h2 id="connecting-environmental-treaties">Connecting Environmental Treaties</h2>
-<p>There are many different ways in which treaties could be linked.
-For example, a treaty can be substituted by another, complemented by protocols,
-changed through amendments, and/or cite another treaty.
-To facilitate the identification and connection between the databases in the package, the <code>manypkgs::code_agreements()</code> function has been developed to generate a treatyID for treaties in a database.
-Each of the <code>{manyenviron}</code> dataset contains a treatyID column.
-To understand what are the information provided through by the treatyID,
-as well as the benefits of using treatyID to spot the relationships between the treaties across several datasets
-in a database, please visit this <a href="https://globalgov.github.io/manypkgs/articles/agreements.html">article</a>
+          <p><span>January 1, 0001</span> by <span></span></p>
+          <h2 class="blog-title"></h2>
+          <img class="feature-image" src="http://globalgov.ch" alt="blog-feature-image">
+          <h2 id="connecting-environmental-treaties">Connecting Environmental Treaties</h2>
+<p><code>{manyenviron}</code> stores several datasets on environmental agreements,
+memeberships, and references in different databases. There are many
+different ways in which treaties could be linked. For example, a treaty
+can be substituted by another, complemented by protocols, changed
+through amendments, and/or cite another treaty. To facilitate the
+identification and connection between the databases in the package, the
+<code>manypkgs::code_agreements()</code> function has been developed to generate a
+treatyID for treaties in a database. Each of the <code>{manyenviron}</code> dataset
+contains a treatyID column. To understand what are the information
+provided through by the treatyID, as well as the benefits of using
+treatyID to spot the relationships between the treaties across several
+datasets in a database, please visit this
+<a href="https://globalgov.github.io/manypkgs/articles/agreements.html">article</a>
 on the <code>{manypkgs}</code> website.</p>
-<p>Below are two examples of how to visualise treaty linkages for the references and the
-memberships databases in <code>{manyenviron}</code>.
-We use <code>{manynet}</code> to create the network plots, more information about the package can be found
-<a href="https://snlab-ch.github.io/manynet/">here</a>.</p>
+<p>Below are two examples of how to visualise treaty linkages for the
+references and the memberships databases in <code>{manyenviron}</code>. We use
+<code>{manynet}</code> to create the network plots, more information about the
+package can be found <a href="https://snlab-ch.github.io/manynet/">here</a>.</p>
 <h3 id="visualising-how-agreements-connect-by-references">Visualising How Agreements Connect by References</h3>
-<p>The graph below illustrates a sample of earliest 25 treaties from the references database. We select only treaties that cite other treaties. The treatyIDs are used to facilitate the reading and illustration of the relationships.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(dplyr)
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(ggplot2)
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(manynet)
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(stringr)
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Get dataset</span>
-</span></span><span style="display:flex;"><span>references <span style="color:#f92672">&lt;-</span> manyenviron<span style="color:#f92672">::</span>references<span style="color:#f92672">$</span>ECOLEX_REF <span style="color:#f92672">%&gt;%</span>
-</span></span><span style="display:flex;"><span>  dplyr<span style="color:#f92672">::</span><span style="color:#a6e22e">distinct</span>() <span style="color:#f92672">%&gt;%</span>
-</span></span><span style="display:flex;"><span>  dplyr<span style="color:#f92672">::</span><span style="color:#a6e22e">mutate</span>(year <span style="color:#f92672">=</span> stringr<span style="color:#f92672">::</span><span style="color:#a6e22e">str_extract</span>(treatyID2,
-</span></span><span style="display:flex;"><span>                                            <span style="color:#e6db74">&#34;[:digit:]{4}&#34;</span>)) <span style="color:#f92672">%&gt;%</span>
-</span></span><span style="display:flex;"><span>  dplyr<span style="color:#f92672">::</span><span style="color:#a6e22e">filter</span>(RefType <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;Cites&#34;</span>) <span style="color:#f92672">%&gt;%</span>
-</span></span><span style="display:flex;"><span>  dplyr<span style="color:#f92672">::</span><span style="color:#a6e22e">arrange</span>(year)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Plot with manynet</span>
-</span></span><span style="display:flex;"><span>manynet<span style="color:#f92672">::</span><span style="color:#a6e22e">gglineage</span>(references[1<span style="color:#f92672">:</span><span style="color:#ae81ff">25</span>, <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>)]) <span style="color:#f92672">+</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">labs</span>(title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Treaty Lineage of Selected Agreements&#34;</span>,
-</span></span><span style="display:flex;"><span>       caption <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Source: manyenviron&#34;</span>) <span style="color:#f92672">+</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">theme</span>(plot.title <span style="color:#f92672">=</span> <span style="color:#a6e22e">element_text</span>(family <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;sans&#34;</span>,
-</span></span><span style="display:flex;"><span>                                  size <span style="color:#f92672">=</span> <span style="color:#ae81ff">18</span>,
-</span></span><span style="display:flex;"><span>                                  hjust <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span>))
-</span></span></code></pre></div><p>We can also take a look at a single lineage of Enviromental treaties.
-Let&rsquo;s look at treaties that either cite or ammend the Ramsar Convention on Wetlands of International
-Importance Especially as Waterfowl Habitat (&ldquo;RAMSA_1971A&rdquo;).</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(dplyr)
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(ggplot2)
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(manynet)
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(stringr)
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Subset dataset</span>
-</span></span><span style="display:flex;"><span>ramsa <span style="color:#f92672">&lt;-</span> manyenviron<span style="color:#f92672">::</span>references<span style="color:#f92672">$</span>ECOLEX_REF <span style="color:#f92672">%&gt;%</span>
-</span></span><span style="display:flex;"><span>  dplyr<span style="color:#f92672">::</span><span style="color:#a6e22e">distinct</span>() <span style="color:#f92672">%&gt;%</span>
-</span></span><span style="display:flex;"><span>  dplyr<span style="color:#f92672">::</span><span style="color:#a6e22e">mutate</span>(year <span style="color:#f92672">=</span> stringr<span style="color:#f92672">::</span><span style="color:#a6e22e">str_extract</span>(treatyID2,
-</span></span><span style="display:flex;"><span>                                            <span style="color:#e6db74">&#34;[:digit:]{4}&#34;</span>)) <span style="color:#f92672">%&gt;%</span>
-</span></span><span style="display:flex;"><span>  dplyr<span style="color:#f92672">::</span><span style="color:#a6e22e">filter</span>(treatyID2 <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;RAMSA_1971A&#34;</span>) <span style="color:#f92672">%&gt;%</span>
-</span></span><span style="display:flex;"><span>  dplyr<span style="color:#f92672">::</span><span style="color:#a6e22e">arrange</span>(year)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Get agreement titles, join information, and plot</span>
-</span></span><span style="display:flex;"><span>manyenviron<span style="color:#f92672">::</span>agreements<span style="color:#f92672">$</span>ECOLEX <span style="color:#f92672">%&gt;%</span>
-</span></span><span style="display:flex;"><span>  dplyr<span style="color:#f92672">::</span><span style="color:#a6e22e">select</span>(Title, treatyID) <span style="color:#f92672">%&gt;%</span>
-</span></span><span style="display:flex;"><span>  dplyr<span style="color:#f92672">::</span><span style="color:#a6e22e">rename</span>(treatyID1 <span style="color:#f92672">=</span> treatyID) <span style="color:#f92672">%&gt;%</span>
-</span></span><span style="display:flex;"><span>  dplyr<span style="color:#f92672">::</span><span style="color:#a6e22e">right_join</span>(ramsa) <span style="color:#f92672">%&gt;%</span>
-</span></span><span style="display:flex;"><span>  dplyr<span style="color:#f92672">::</span><span style="color:#a6e22e">rename</span>(to <span style="color:#f92672">=</span> treatyID2,
-</span></span><span style="display:flex;"><span>                from <span style="color:#f92672">=</span> Title) <span style="color:#f92672">%&gt;%</span>
-</span></span><span style="display:flex;"><span>  dplyr<span style="color:#f92672">::</span><span style="color:#a6e22e">select</span>(to, from, RefType) <span style="color:#f92672">%&gt;%</span>
-</span></span><span style="display:flex;"><span>  manynet<span style="color:#f92672">::</span><span style="color:#a6e22e">as_tidygraph</span>() <span style="color:#f92672">%&gt;%</span>
-</span></span><span style="display:flex;"><span>  manynet<span style="color:#f92672">::</span><span style="color:#a6e22e">activate</span>(edges) <span style="color:#f92672">%&gt;%</span>
-</span></span><span style="display:flex;"><span>  manynet<span style="color:#f92672">::</span><span style="color:#a6e22e">autographr</span>(edge_color <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;RefType&#34;</span>)
-</span></span></code></pre></div><!-- raw HTML omitted -->
+<p>The graph below illustrates a sample of earliest 25 treaties from the
+references database. We select only treaties that cite other treaties.
+The treatyIDs are used to facilitate the reading and illustration of the
+relationships.</p>
+<pre><code>library(dplyr)
+library(ggplot2)
+library(manynet)
+library(stringr)
+library(tidygraph)
+# Get dataset
+references &lt;- manyenviron::references$ECOLEX_REF %&gt;%
+  dplyr::distinct() %&gt;%
+  dplyr::mutate(year = stringr::str_extract(treatyID2,
+                                            &quot;[:digit:]{4}&quot;)) %&gt;%
+  dplyr::filter(RefType == &quot;Cites&quot;) %&gt;%
+  dplyr::arrange(year)
+
+# Plot with manynet
+manynet::gglineage(references[1:25, c(1, 2, 3)]) +
+  labs(title = &quot;Treaty Lineage of Selected Agreements&quot;,
+       caption = &quot;Source: manyenviron&quot;) +
+  theme(plot.title = element_text(family = &quot;sans&quot;,
+                                  size = 18,
+                                  hjust = 0.5))
+</code></pre>
+<p>We can also take a look at a single lineage of Enviromental treaties.
+Let’s look at treaties that either cite or ammend the Ramsar Convention
+on Wetlands of International Importance Especially as Waterfowl Habitat
+(“RAMSA_1971A”).</p>
+<pre><code>library(dplyr)
+library(ggplot2)
+library(manynet)
+library(stringr)
+# Subset dataset
+ramsa &lt;- manyenviron::references$ECOLEX_REF %&gt;%
+  dplyr::distinct() %&gt;%
+  dplyr::mutate(year = stringr::str_extract(treatyID2,
+                                            &quot;[:digit:]{4}&quot;)) %&gt;%
+  dplyr::filter(treatyID2 == &quot;RAMSA_1971A&quot;) %&gt;%
+  dplyr::arrange(year)
+
+# Get agreement titles, join information, and plot
+manyenviron::agreements$ECOLEX %&gt;%
+  dplyr::select(Title, treatyID) %&gt;%
+  dplyr::rename(treatyID1 = treatyID) %&gt;%
+  dplyr::right_join(ramsa) %&gt;%
+  dplyr::rename(to = treatyID2,
+                from = Title) %&gt;%
+  dplyr::select(to, from, RefType) %&gt;%
+  manynet::as_tidygraph() %&gt;%
+  tidygraph::activate(edges) %&gt;%
+  manynet::autographr(edge_color = &quot;RefType&quot;)
+</code></pre>
+<!-- raw HTML omitted -->
 <h3 id="visualising-how-agreements-connect-by-country-membership">Visualising How Agreements Connect by Country Membership</h3>
-<p>The graph below illustrates the connection between parties and treaties for multilateral environmental agreements signed into force in 1980 using the memberships database.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># Subset and plot data</span>
-</span></span><span style="display:flex;"><span>manyenviron<span style="color:#f92672">::</span>memberships<span style="color:#f92672">$</span>IEADB_MEM <span style="color:#f92672">%&gt;%</span>
-</span></span><span style="display:flex;"><span>  dplyr<span style="color:#f92672">::</span><span style="color:#a6e22e">mutate</span>(year <span style="color:#f92672">=</span> stringr<span style="color:#f92672">::</span><span style="color:#a6e22e">str_extract</span>(manyID,
-</span></span><span style="display:flex;"><span>                                            <span style="color:#e6db74">&#34;[:digit:]{4}&#34;</span>)) <span style="color:#f92672">%&gt;%</span>
-</span></span><span style="display:flex;"><span>  dplyr<span style="color:#f92672">::</span><span style="color:#a6e22e">filter</span>(year <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;1980&#34;</span>) <span style="color:#f92672">%&gt;%</span>
-</span></span><span style="display:flex;"><span>  dplyr<span style="color:#f92672">::</span><span style="color:#a6e22e">select</span>(treatyID, stateID, year) <span style="color:#f92672">%&gt;%</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">group_by</span>(treatyID) <span style="color:#f92672">%&gt;%</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">filter</span>( <span style="color:#a6e22e">n</span>() <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">2</span>) <span style="color:#f92672">%&gt;%</span> <span style="color:#75715e"># keep only multilateral treaties</span>
-</span></span><span style="display:flex;"><span>  manynet<span style="color:#f92672">::</span><span style="color:#a6e22e">as_tidygraph</span>() <span style="color:#f92672">%&gt;%</span>
-</span></span><span style="display:flex;"><span>  manynet<span style="color:#f92672">::</span><span style="color:#a6e22e">activate</span>(nodes) <span style="color:#f92672">%&gt;%</span>
-</span></span><span style="display:flex;"><span>  dplyr<span style="color:#f92672">::</span><span style="color:#a6e22e">mutate</span>(color <span style="color:#f92672">=</span> <span style="color:#a6e22e">ifelse</span>(<span style="color:#a6e22e">grepl</span>(<span style="color:#e6db74">&#34;_&#34;</span>, name), <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">0</span>),
-</span></span><span style="display:flex;"><span>                size <span style="color:#f92672">=</span> <span style="color:#a6e22e">ifelse</span>(<span style="color:#a6e22e">grepl</span>(<span style="color:#e6db74">&#34;_&#34;</span>, name), <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">2</span>),
-</span></span><span style="display:flex;"><span>                shape <span style="color:#f92672">=</span> <span style="color:#a6e22e">ifelse</span>(<span style="color:#a6e22e">grepl</span>(<span style="color:#e6db74">&#34;_&#34;</span>, name),
-</span></span><span style="display:flex;"><span>                               <span style="color:#e6db74">&#34;square&#34;</span>, <span style="color:#e6db74">&#34;circle&#34;</span>)) <span style="color:#f92672">%&gt;%</span>
-</span></span><span style="display:flex;"><span>  manynet<span style="color:#f92672">::</span><span style="color:#a6e22e">to_undirected</span>() <span style="color:#f92672">%&gt;%</span>
-</span></span><span style="display:flex;"><span>  manynet<span style="color:#f92672">::</span><span style="color:#a6e22e">autographr</span>(node_color <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;color&#34;</span>,
-</span></span><span style="display:flex;"><span>                      node_size <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;size&#34;</span>,
-</span></span><span style="display:flex;"><span>                      node_shape <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;shape&#34;</span>)
-</span></span></code></pre></div><!-- raw HTML omitted -->
+<p>The graph below illustrates the connection between parties and treaties
+for multilateral environmental agreements signed into force in 1980
+using the memberships database.</p>
+<pre><code># Subset and plot data
+manyenviron::memberships$IEADB_MEM %&gt;%
+  dplyr::mutate(year = stringr::str_extract(manyID,
+                                            &quot;[:digit:]{4}&quot;)) %&gt;%
+  dplyr::filter(year == &quot;1980&quot;) %&gt;%
+  dplyr::select(treatyID, stateID, year) %&gt;%
+  group_by(treatyID) %&gt;%
+  filter( n() &gt; 2) %&gt;% # keep only multilateral treaties
+  manynet::as_tidygraph() %&gt;%
+  tidygraph::activate(nodes) %&gt;%
+  dplyr::mutate(color = ifelse(grepl(&quot;_&quot;, name), 1, 0),
+                size = ifelse(grepl(&quot;_&quot;, name), 4, 2),
+                shape = ifelse(grepl(&quot;_&quot;, name),
+                               &quot;square&quot;, &quot;circle&quot;)) %&gt;%
+  manynet::to_undirected() %&gt;%
+  manynet::autographr(node_color = &quot;color&quot;,
+                      node_size = &quot;size&quot;,
+                      node_shape = &quot;shape&quot;)
+</code></pre>
+<!-- raw HTML omitted -->
 <h3 id="extra-dynamic-visualisation">Extra: dynamic visualisation</h3>
-<p>For events or panel network data, <code>{manynet}</code> allows users to visualise how networks evolve over time as animations.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># Install the development version of manynet, for now</span>
-</span></span><span style="display:flex;"><span>remotes<span style="color:#f92672">::</span><span style="color:#a6e22e">install_github</span>(<span style="color:#e6db74">&#34;snlab-ch/manynet&#34;</span>, ref <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;develop&#34;</span>)
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Subset and plot data</span>
-</span></span><span style="display:flex;"><span>manyenviron<span style="color:#f92672">::</span>memberships<span style="color:#f92672">$</span>IEADB_MEM <span style="color:#f92672">%&gt;%</span>
-</span></span><span style="display:flex;"><span>  dplyr<span style="color:#f92672">::</span><span style="color:#a6e22e">mutate</span>(year <span style="color:#f92672">=</span> stringr<span style="color:#f92672">::</span><span style="color:#a6e22e">str_extract</span>(manyID, <span style="color:#e6db74">&#34;[:digit:]{4}&#34;</span>)) <span style="color:#f92672">%&gt;%</span>
-</span></span><span style="display:flex;"><span>  dplyr<span style="color:#f92672">::</span><span style="color:#a6e22e">filter</span>(year <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;1980&#34;</span> <span style="color:#f92672">|</span> year <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;1981&#34;</span>) <span style="color:#f92672">%&gt;%</span>
-</span></span><span style="display:flex;"><span>  dplyr<span style="color:#f92672">::</span><span style="color:#a6e22e">select</span>(treatyID, stateID, year) <span style="color:#f92672">%&gt;%</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">group_by</span>(treatyID) <span style="color:#f92672">%&gt;%</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">filter</span>( <span style="color:#a6e22e">n</span>() <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">2</span>) <span style="color:#f92672">%&gt;%</span> <span style="color:#75715e"># keep only multilateral treaties</span>
-</span></span><span style="display:flex;"><span>  manynet<span style="color:#f92672">::</span><span style="color:#a6e22e">as_tidygraph</span>() <span style="color:#f92672">%&gt;%</span>
-</span></span><span style="display:flex;"><span>  manynet<span style="color:#f92672">::</span><span style="color:#a6e22e">activate</span>(nodes) <span style="color:#f92672">%&gt;%</span>
-</span></span><span style="display:flex;"><span>  dplyr<span style="color:#f92672">::</span><span style="color:#a6e22e">mutate</span>(color <span style="color:#f92672">=</span> <span style="color:#a6e22e">ifelse</span>(<span style="color:#a6e22e">grepl</span>(<span style="color:#e6db74">&#34;_&#34;</span>, name), <span style="color:#e6db74">&#34;blue&#34;</span>, <span style="color:#e6db74">&#34;red&#34;</span>),
-</span></span><span style="display:flex;"><span>                size <span style="color:#f92672">=</span> <span style="color:#a6e22e">ifelse</span>(<span style="color:#a6e22e">grepl</span>(<span style="color:#e6db74">&#34;_&#34;</span>, name), <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">2</span>),
-</span></span><span style="display:flex;"><span>                shape <span style="color:#f92672">=</span> <span style="color:#a6e22e">ifelse</span>(<span style="color:#a6e22e">grepl</span>(<span style="color:#e6db74">&#34;_&#34;</span>, name), <span style="color:#e6db74">&#34;square&#34;</span>, <span style="color:#e6db74">&#34;circle&#34;</span>)) <span style="color:#f92672">%&gt;%</span>
-</span></span><span style="display:flex;"><span>  manynet<span style="color:#f92672">::</span><span style="color:#a6e22e">to_waves</span>(attribute <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;year&#34;</span>) <span style="color:#f92672">%&gt;%</span> 
-</span></span><span style="display:flex;"><span>  manynet<span style="color:#f92672">::</span><span style="color:#a6e22e">autographd</span>(delete.vertices <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>, node_color <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;color&#34;</span>,
-</span></span><span style="display:flex;"><span>                      node_size <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;size&#34;</span>, node_shape <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;shape&#34;</span>)
-</span></span></code></pre></div>
+<p>For events or panel network data, <code>{manynet}</code> allows users to visualise
+how networks evolve over time as animations.</p>
+<pre><code># Install the development version of manynet, for now
+remotes::install_github(&quot;snlab-ch/manynet&quot;, ref = &quot;develop&quot;)
+# Subset and plot data
+manyenviron::memberships$IEADB_MEM %&gt;%
+  dplyr::mutate(year = stringr::str_extract(manyID, &quot;[:digit:]{4}&quot;)) %&gt;%
+  dplyr::filter(year == &quot;1980&quot; | year == &quot;1981&quot;) %&gt;%
+  dplyr::select(treatyID, stateID, year) %&gt;%
+  group_by(treatyID) %&gt;%
+  filter( n() &gt; 2) %&gt;% # keep only multilateral treaties
+  manynet::as_tidygraph() %&gt;%
+  tidygraph::activate(nodes) %&gt;%
+  dplyr::mutate(color = ifelse(grepl(&quot;_&quot;, name), &quot;blue&quot;, &quot;red&quot;),
+                size = ifelse(grepl(&quot;_&quot;, name), 4, 2),
+                shape = ifelse(grepl(&quot;_&quot;, name), &quot;square&quot;, &quot;circle&quot;)) %&gt;%
+  manynet::to_waves(attribute = &quot;year&quot;) %&gt;% 
+  manynet::autographd(delete.vertices = TRUE, node_color = &quot;color&quot;,
+                      node_size = &quot;size&quot;, node_shape = &quot;shape&quot;)
+</code></pre>
+
         </article>
       </div>
     </div>
@@ -238,7 +237,7 @@ Importance Especially as Waterfowl Habitat (&ldquo;RAMSA_1971A&rdquo;).</p>
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h1 class="site-cta-title">Do you have any questions or would like to contribute to the project? Please get in touch with us!</h1>
+          <h1 class="site-cta-title">Would you like to contribute to the project or have any questions? Get in touch with us!</h1>
           <ul class="site-cta-buttons">
             <li>
               <a href="http://globalgov.ch/contact" class="btn btn-secondary">
@@ -311,7 +310,7 @@ Importance Especially as Waterfowl Habitat (&ldquo;RAMSA_1971A&rdquo;).</p>
         <div class="site-footer-widget">
           <h5 class="site-footer-widget-title">Providing data across various issue domains of Global Governance</h5>
           <p class="site-footer-widget-description">
-            We also develop and maintain ‘many’ packages containing many related datasets on many issue-domains, actors, and institutions of global governance, see https://github.com/globalgov
+            We develop and maintain ‘many’ packages containing data on actors and institutions of global governance!
           </p>
         </div>
       </div>

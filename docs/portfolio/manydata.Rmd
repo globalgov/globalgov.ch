@@ -9,7 +9,11 @@ project_images:
 type: portfolio
 ---
 
-
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>",
+                      message = FALSE, warning = FALSE)
+options(rmarkdown.html_vignette.check_title = FALSE)
+```
 
 ## Manyenviron Data
 
@@ -24,8 +28,7 @@ cites, superseded by) between two treaties.
 
 For a quick overview of the database and dataset in `{manyenviron}`, we can use the `compare_dimensions()` function from `{manydata}`.
 
-
-```r
+```{r, eval = FALSE}
 #remotes::install_github("globalgov/manyenviron")
 library(manydata)
 library(manyenviron)
@@ -36,8 +39,7 @@ manydata::compare_dimensions(manyenviron::references)
 
 To view the bibliographic references for a dataset, a database, or the whole package, we can also use `call_sources()` from `{manydata}`.
 
-
-```r
+```{r, eval = FALSE}
 manydata::call_sources("manyenviron", "agreements")
 manydata::call_sources("manyenviron", "memberships")
 manydata::call_sources("manyenviron", "references")

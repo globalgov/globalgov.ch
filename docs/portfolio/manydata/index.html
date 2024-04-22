@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us"><head>
   <meta charset="utf-8" />
-  <title>GGO Blog</title>
+  <title>manyenviron</title>
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -97,57 +97,42 @@
 </nav>
 <main>
 
-<section class="site-blog-header">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-8 text-center">
-        <h1>GGO Blog</h1>
-        <p>
-          The possibilities of what we can do with global governance data are endless!
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="site-blog">
+<section class="site-project-single-section">
   <div class="container">
     <div class="row">
-      
-      <div class="col-lg-6">
-        <article class="site-blog-post">
-          
-          <div class="site-blog-post-thumb">
-            <img src="http://globalgov.ch/images/blog/manystates_hexlogo.png" alt="post-thumb">
+      <div class="col-lg-8 mx-auto">
+        <div class="site-project-single">
+          <h1>
+            manyenviron
+          </h1>
+          <div class="site-project-single-description">
+            <h2 id="manyenviron-data">Manyenviron Data</h2>
+<p><code>{manyenviron}</code> stores several datasets on various aspects of environmental treaties in different databases.
+For example, the <strong>Agreements</strong> database is made of multiple datasets of environmental treaty titles with
+specific information such as the agreement type (e.g. agreements, protocols, amendments, declarations), if
+they are bilateral or multilateral, and some important dates such as the signature or entry into force.
+The <strong>Memberships</strong> database contains lists of countries with the treaties to which they are parties to. It
+also includes information on the signature date of the treaty or the withdrawal date of a party.
+The <strong>References</strong> database is composed of a dataset that indicates the relationship (e.g. amended by,
+cites, superseded by) between two treaties.</p>
+<p>For a quick overview of the database and dataset in <code>{manyenviron}</code>, we can use the <code>compare_dimensions()</code> function from <code>{manydata}</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e">#remotes::install_github(&#34;globalgov/manyenviron&#34;)</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(manydata)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(manyenviron)
+</span></span><span style="display:flex;"><span>manydata<span style="color:#f92672">::</span><span style="color:#a6e22e">compare_dimensions</span>(manyenviron<span style="color:#f92672">::</span>agreements)
+</span></span><span style="display:flex;"><span>manydata<span style="color:#f92672">::</span><span style="color:#a6e22e">compare_dimensions</span>(manyenviron<span style="color:#f92672">::</span>memberships)
+</span></span><span style="display:flex;"><span>manydata<span style="color:#f92672">::</span><span style="color:#a6e22e">compare_dimensions</span>(manyenviron<span style="color:#f92672">::</span>references)
+</span></span></code></pre></div><p>To view the bibliographic references for a dataset, a database, or the whole package, we can also use <code>call_sources()</code> from <code>{manydata}</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>manydata<span style="color:#f92672">::</span><span style="color:#a6e22e">call_sources</span>(<span style="color:#e6db74">&#34;manyenviron&#34;</span>, <span style="color:#e6db74">&#34;agreements&#34;</span>)
+</span></span><span style="display:flex;"><span>manydata<span style="color:#f92672">::</span><span style="color:#a6e22e">call_sources</span>(<span style="color:#e6db74">&#34;manyenviron&#34;</span>, <span style="color:#e6db74">&#34;memberships&#34;</span>)
+</span></span><span style="display:flex;"><span>manydata<span style="color:#f92672">::</span><span style="color:#a6e22e">call_sources</span>(<span style="color:#e6db74">&#34;manyenviron&#34;</span>, <span style="color:#e6db74">&#34;references&#34;</span>)
+</span></span></code></pre></div>
           </div>
-          
-          <div class="site-blog-post-content">
-            <span>August 15, 2023</span>
-            <h3><a href="http://globalgov.ch/blog/working-with-manystates-data/">Working with manystates data</a></h3>
-            <p>
-              Have democracies become more free and accountable since the 1990s? {manystates} provides data on states in the international system across time, assembling together datasets from reputable sources including The Correlates of War project, The Issue Correlates of War project, and Gleditsch and Ward&rsquo;s dataset on interstate system membership. ...
-            </p>
-            <a href="http://globalgov.ch/blog/working-with-manystates-data/" class="read-more">read more</a>
+          <div class="site-project-single-image">
+            
+            <img src="http://globalgov.ch/images/blog/manyenv_memb.png" alt="project image">
+            
           </div>
-        </article>
-      </div>
-      
-      <div class="col-lg-6">
-        <article class="site-blog-post">
-          
-          <div class="site-blog-post-content">
-            <span>January 1, 0001</span>
-            <h3><a href="http://globalgov.ch/blog/how-do-environmental-treaties-connect/"></a></h3>
-            <p>
-              Connecting Environmental Treaties {manyenviron} stores several datasets on environmental agreements, memeberships, and references in different databases. There are many different ways in which treaties could be linked. ...
-            </p>
-            <a href="http://globalgov.ch/blog/how-do-environmental-treaties-connect/" class="read-more">read more</a>
-          </div>
-        </article>
-      </div>
-      
-      <div class="col-12">
-        <div class="site-blog-pagination">
           
         </div>
       </div>

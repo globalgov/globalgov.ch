@@ -8,40 +8,14 @@ output: md_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
+knitr::opts_chunk$set(collapse = TRUE, message = FALSE,
+                      warning = FALSE, comment = "#>")
 options(rmarkdown.html_vignette.check_title = FALSE)
-```
-
-## Manyenviron Data
-
-`{manyenviron}` stores several datasets on various aspects of environmental treaties in different databases.
-For example, the **Agreements** database is made of multiple datasets of environmental treaty titles with
-specific information such as the agreement type (e.g. agreements, protocols, amendments, declarations), if
-they are bilateral or multilateral, and some important dates such as the signature or entry into force.
-The **Memberships** database contains lists of countries with the treaties to which they are parties to. It
-also includes information on the signature date of the treaty or the withdrawal date of a party.
-The **References** database is composed of a dataset that indicates the relationship (e.g. amended by,
-cites, superseded by) between two treaties. Finally, the **Texts** database stores the text of
-environmental treaties.
-
-For a quick overview of the database and dataset in `{manyenviron}`, we can use the `data_contrast()` function from `{manydata}`.
-
-```{r, eval=FALSE}
-library(manydata)
-manydata::data_contrast("manyenviron", "agreements", "IEADB")
-manydata::data_contrast("manyenviron", "memberships")
-```
-
-To view the bibliographic references for a dataset, a database, or the whole package, we can also use `code_source()` from `{manydata}`.
-
-```{r, eval=FALSE}
-manydata::data_source("manyenviron", "agreements", "IEADB")
-manydata::data_source("manyenviron", "memberships")
-manydata::data_source("manyenviron")
 ```
 
 ## Connecting Environmental Treaties
 
+`{manyenviron}` stores several datasets on environmental agreements, memeberships, and references in different databases. 
 There are many different ways in which treaties could be linked.
 For example, a treaty can be substituted by another, complemented by protocols,
 changed through amendments, and/or cite another treaty.
@@ -66,6 +40,7 @@ library(dplyr)
 library(ggplot2)
 library(manynet)
 library(stringr)
+library(tidygraph)
 # Get dataset
 references <- manyenviron::references$ECOLEX_REF %>%
   dplyr::distinct() %>%
@@ -109,7 +84,7 @@ manyenviron::agreements$ECOLEX %>%
                 from = Title) %>%
   dplyr::select(to, from, RefType) %>%
   manynet::as_tidygraph() %>%
-  manynet::activate(edges) %>%
+  tidygraph::activate(edges) %>%
   manynet::autographr(edge_color = "RefType")
 ```
 
@@ -127,7 +102,7 @@ manyenviron::memberships$IEADB_MEM %>%
   group_by(treatyID) %>%
   filter( n() > 2) %>% # keep only multilateral treaties
   manynet::as_tidygraph() %>%
-  manynet::activate(nodes) %>%
+  tidygraph::activate(nodes) %>%
   dplyr::mutate(color = ifelse(grepl("_", name), 1, 0),
                 size = ifelse(grepl("_", name), 4, 2),
                 shape = ifelse(grepl("_", name),
@@ -153,7 +128,7 @@ manyenviron::memberships$IEADB_MEM %>%
   group_by(treatyID) %>%
   filter( n() > 2) %>% # keep only multilateral treaties
   manynet::as_tidygraph() %>%
-  manynet::activate(nodes) %>%
+  tidygraph::activate(nodes) %>%
   dplyr::mutate(color = ifelse(grepl("_", name), "blue", "red"),
                 size = ifelse(grepl("_", name), 4, 2),
                 shape = ifelse(grepl("_", name), "square", "circle")) %>%
