@@ -1,5 +1,5 @@
 ---
-feature_image: images/blog/manyenv_memb.png
+feature_image: images/blog/manystates_hexlogo.png
 image: images/blog/manystates_hexlogo.png
 title: "Working with manystates data"
 author: "Henrique Sposito and Jael Tan"
@@ -86,7 +86,7 @@ vdem <- vdem %>% dplyr::select(StateName, stateID, Year,
                               v2x_regime, v2x_accountability_osp,
                               v2x_freexp_altinf, v2x_cspart) %>%
   # select only the variables of interest
-  dplyr::filter(Year > 1989, v2x_regime == 2 | v2x_regime == 3) %>%
+  dplyr::filter(as.numeric(Year) > 1989, v2x_regime == 2 | v2x_regime == 3) %>%
   # filter for last 30 years (bigger than 1989) and for democracies only
   dplyr::rename(regime = v2x_regime,
                 freedom_expression = v2x_freexp_altinf,
@@ -137,7 +137,7 @@ Let's first compare the 10 states with the highest accountability scores
 library(kableExtra)
 
 vdem_account_10 <- vdem %>% # call data without assigning it
-  dplyr::filter(Year > 2011) %>% # filter for years in both datasets
+  dplyr::filter(as.numeric(Year) > 2011) %>% # filter for years in both datasets
   group_by(StateName) %>% # group by state name
   summarise(Mean_VDEM = mean(accountability)) %>%
   arrange(desc(Mean_VDEM)) %>% # arrange the data by mean, in decreasing order
@@ -163,7 +163,7 @@ Let's compare which states appear as having multiple democratic regimes since 20
 
 ```{r transitions}
 vdem_transition <- vdem %>% # saving this object to use later
-  dplyr::filter(Year > 2011) %>% # filter for years in both datasets
+  dplyr::filter(as.numeric(Year) > 2011) %>% # filter for years in both datasets
   group_by(StateName, regime_type) %>% # group by state and regime
   count() %>% # count grouped observations
   group_by(StateName) %>% # re-group by state name only 
@@ -191,7 +191,7 @@ VDEM and freedom house appear to differ quite a bit in the cases that transition
 
 ```{r}
 transition_vdem <- vdem %>% # saving this object to use later
-  dplyr::filter(Year > 2011) %>% # filter for years in both datasets
+  dplyr::filter(as.numeric(Year) > 2011) %>% # filter for years in both datasets
   group_by(StateName, regime_type) %>% # group by state and regime
   summarise(Years_VDEM = paste(Year, collapse = ", ")) %>%
   group_by(StateName) %>% # re-group by state name only 

@@ -1,5 +1,5 @@
 ---
-feature_image: images/blog/manyenv_memb.png
+feature_image: images/blog/manyenviron_hexlogo.png
 image: images/blog/manyenviron_hexlogo.png
 title: "How Do Environmental Treaties Connect?"
 authors: "James Hollway, Esther Peev, Henrique Sposito, and Bernhard Bieri"
@@ -15,7 +15,8 @@ options(rmarkdown.html_vignette.check_title = FALSE)
 
 ## Connecting Environmental Treaties
 
-`{manyenviron}` stores several datasets on environmental agreements, memeberships, and references in different databases. 
+`{manyenviron}` stores several datasets on environmental agreements.
+
 There are many different ways in which treaties could be linked.
 For example, a treaty can be substituted by another, complemented by protocols,
 changed through amendments, and/or cite another treaty.

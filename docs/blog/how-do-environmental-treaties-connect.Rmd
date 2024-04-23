@@ -1,5 +1,5 @@
 ---
-feature_image: images/blog/manyenv_memb.png
+feature_image: images/blog/manyenviron_hexlogo.png
 image: images/blog/manyenviron_hexlogo.png
 title: "How Do Environmental Treaties Connect?"
 authors: "James Hollway, Esther Peev, Henrique Sposito, and Bernhard Bieri"

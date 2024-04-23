@@ -102,9 +102,9 @@
     <div class="row justify-content-center">
       <div class="col-lg-8">
         <article class="site-blog-details">
-          <p><span>August 15, 2023</span> by <span>Henrique Sposito and Jael Tan</span></p>
+          <p><span>April 23, 2024</span> by <span>Henrique Sposito and Jael Tan</span></p>
           <h2 class="blog-title">Working with manystates data</h2>
-          <img class="feature-image" src="http://globalgov.ch/images/blog/manyenv_memb.png" alt="blog-feature-image">
+          <img class="feature-image" src="http://globalgov.ch/images/blog/manystates_hexlogo.png" alt="blog-feature-image">
           <!-- raw HTML omitted -->
 <!-- raw HTML omitted -->
 <h1 id="have-democracies-become-more-free-and-accountable-since-the-1990s">Have democracies become more free and accountable since the 1990s?</h1>
@@ -169,7 +169,7 @@ ordinal data from the surveys (ordered categorical) as follows:</p>
 </span></span><span style="display:flex;"><span>                              v2x_regime, v2x_accountability_osp,
 </span></span><span style="display:flex;"><span>                              v2x_freexp_altinf, v2x_cspart) <span style="color:#f92672">%&gt;%</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e"># select only the variables of interest</span>
-</span></span><span style="display:flex;"><span>  dplyr<span style="color:#f92672">::</span><span style="color:#a6e22e">filter</span>(Year <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">1989</span>, v2x_regime <span style="color:#f92672">==</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">|</span> v2x_regime <span style="color:#f92672">==</span> <span style="color:#ae81ff">3</span>) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  dplyr<span style="color:#f92672">::</span><span style="color:#a6e22e">filter</span>(<span style="color:#a6e22e">as.numeric</span>(Year) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">1989</span>, v2x_regime <span style="color:#f92672">==</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">|</span> v2x_regime <span style="color:#f92672">==</span> <span style="color:#ae81ff">3</span>) <span style="color:#f92672">%&gt;%</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e"># filter for last 30 years (bigger than 1989) and for democracies only</span>
 </span></span><span style="display:flex;"><span>  dplyr<span style="color:#f92672">::</span><span style="color:#a6e22e">rename</span>(regime <span style="color:#f92672">=</span> v2x_regime,
 </span></span><span style="display:flex;"><span>                freedom_expression <span style="color:#f92672">=</span> v2x_freexp_altinf,
@@ -211,7 +211,7 @@ Let&rsquo;s subset the data accordingly.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(kableExtra)
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>vdem_account_10 <span style="color:#f92672">&lt;-</span> vdem <span style="color:#f92672">%&gt;%</span> <span style="color:#75715e"># call data without assigning it</span>
-</span></span><span style="display:flex;"><span>  dplyr<span style="color:#f92672">::</span><span style="color:#a6e22e">filter</span>(Year <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">2011</span>) <span style="color:#f92672">%&gt;%</span> <span style="color:#75715e"># filter for years in both datasets</span>
+</span></span><span style="display:flex;"><span>  dplyr<span style="color:#f92672">::</span><span style="color:#a6e22e">filter</span>(<span style="color:#a6e22e">as.numeric</span>(Year) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">2011</span>) <span style="color:#f92672">%&gt;%</span> <span style="color:#75715e"># filter for years in both datasets</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">group_by</span>(StateName) <span style="color:#f92672">%&gt;%</span> <span style="color:#75715e"># group by state name</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">summarise</span>(Mean_VDEM <span style="color:#f92672">=</span> <span style="color:#a6e22e">mean</span>(accountability)) <span style="color:#f92672">%&gt;%</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">arrange</span>(<span style="color:#a6e22e">desc</span>(Mean_VDEM)) <span style="color:#f92672">%&gt;%</span> <span style="color:#75715e"># arrange the data by mean, in decreasing order</span>
@@ -232,7 +232,7 @@ Let&rsquo;s subset the data accordingly.</p>
 <h2 id="pathways-from-electoral-to-liberal-democracies-and-vice-versa">Pathways: from electoral to liberal democracies (and vice-versa)</h2>
 <p>Let&rsquo;s compare which states appear as having multiple democratic regimes since 2012 in both datasets.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>vdem_transition <span style="color:#f92672">&lt;-</span> vdem <span style="color:#f92672">%&gt;%</span> <span style="color:#75715e"># saving this object to use later</span>
-</span></span><span style="display:flex;"><span>  dplyr<span style="color:#f92672">::</span><span style="color:#a6e22e">filter</span>(Year <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">2011</span>) <span style="color:#f92672">%&gt;%</span> <span style="color:#75715e"># filter for years in both datasets</span>
+</span></span><span style="display:flex;"><span>  dplyr<span style="color:#f92672">::</span><span style="color:#a6e22e">filter</span>(<span style="color:#a6e22e">as.numeric</span>(Year) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">2011</span>) <span style="color:#f92672">%&gt;%</span> <span style="color:#75715e"># filter for years in both datasets</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">group_by</span>(StateName, regime_type) <span style="color:#f92672">%&gt;%</span> <span style="color:#75715e"># group by state and regime</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">count</span>() <span style="color:#f92672">%&gt;%</span> <span style="color:#75715e"># count grouped observations</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">group_by</span>(StateName) <span style="color:#f92672">%&gt;%</span> <span style="color:#75715e"># re-group by state name only </span>
@@ -257,7 +257,7 @@ Let&rsquo;s subset the data accordingly.</p>
 </span></span></code></pre></div><!-- raw HTML omitted -->
 <p>VDEM and freedom house appear to differ quite a bit in the cases that transitioned from liberal democracies to electoral democracies (and vice-versa) since 2012. Let&rsquo;s investigate further by taking a closer look at cases that appear in both datasets.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>transition_vdem <span style="color:#f92672">&lt;-</span> vdem <span style="color:#f92672">%&gt;%</span> <span style="color:#75715e"># saving this object to use later</span>
-</span></span><span style="display:flex;"><span>  dplyr<span style="color:#f92672">::</span><span style="color:#a6e22e">filter</span>(Year <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">2011</span>) <span style="color:#f92672">%&gt;%</span> <span style="color:#75715e"># filter for years in both datasets</span>
+</span></span><span style="display:flex;"><span>  dplyr<span style="color:#f92672">::</span><span style="color:#a6e22e">filter</span>(<span style="color:#a6e22e">as.numeric</span>(Year) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">2011</span>) <span style="color:#f92672">%&gt;%</span> <span style="color:#75715e"># filter for years in both datasets</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">group_by</span>(StateName, regime_type) <span style="color:#f92672">%&gt;%</span> <span style="color:#75715e"># group by state and regime</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">summarise</span>(Years_VDEM <span style="color:#f92672">=</span> <span style="color:#a6e22e">paste</span>(Year, collapse <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;, &#34;</span>)) <span style="color:#f92672">%&gt;%</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">group_by</span>(StateName) <span style="color:#f92672">%&gt;%</span> <span style="color:#75715e"># re-group by state name only </span>

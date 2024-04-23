@@ -6,27 +6,27 @@
     <description>Recent content on Geneva Global Governance Observatory</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 15 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://globalgov.ch/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 23 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://globalgov.ch/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Working with manystates data</title>
-      <link>http://globalgov.ch/blog/working-with-manystates-data/</link>
-      <pubDate>Tue, 15 Aug 2023 00:00:00 +0000</pubDate>
-      
-      <guid>http://globalgov.ch/blog/working-with-manystates-data/</guid>
-      <description>Have democracies become more free and accountable since the 1990s? {manystates} provides data on states in the international system across time, assembling together datasets from reputable sources including The Correlates of War project, The Issue Correlates of War project, and Gleditsch and Ward&amp;rsquo;s dataset on interstate system membership.</description>
-    </item>
-    
-    <item>
-      <title></title>
+      <title>How Do Environmental Treaties Connect?</title>
       <link>http://globalgov.ch/blog/how-do-environmental-treaties-connect/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 23 Apr 2024 00:00:00 +0000</pubDate>
       
       <guid>http://globalgov.ch/blog/how-do-environmental-treaties-connect/</guid>
       <description>Connecting Environmental Treaties {manyenviron} stores several datasets on environmental agreements, memeberships, and references in different databases. There are many different ways in which treaties could be linked.</description>
     </item>
     
     <item>
-      <title>manyenviron</title>
+      <title>Working with manystates data</title>
+      <link>http://globalgov.ch/blog/working-with-manystates-data/</link>
+      <pubDate>Tue, 23 Apr 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://globalgov.ch/blog/working-with-manystates-data/</guid>
+      <description>Have democracies become more free and accountable since the 1990s? {manystates} provides data on states in the international system across time, assembling together datasets from reputable sources including The Correlates of War project, The Issue Correlates of War project, and Gleditsch and Ward&amp;rsquo;s dataset on interstate system membership.</description>
+    </item>
+    
+    <item>
+      <title>manyenviron data</title>
       <link>http://globalgov.ch/portfolio/manydata/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

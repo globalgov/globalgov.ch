@@ -1,11 +1,11 @@
 ---
-title: manyenviron
+title: manyenviron data
 output: github_document
 category:
 - Data Packages
 image: images/blog/manyenviron_hexlogo.png
 project_images:
-- images/blog/manyenv_memb.png
+- images/blog/manyenviron_hexlogo.png
 type: portfolio
 ---
 

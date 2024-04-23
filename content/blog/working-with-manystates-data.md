@@ -1,9 +1,9 @@
 ---
-feature_image: images/blog/manyenv_memb.png
+feature_image: images/blog/manystates_hexlogo.png
 image: images/blog/manystates_hexlogo.png
 title: "Working with manystates data"
 author: "Henrique Sposito and Jael Tan"
-date: "2023-08-15"
+date: "2024-04-23"
 output: md_document
 ---
 <script src="/rmarkdown-libs/kePrint/kePrint.js"></script>
@@ -17,11 +17,12 @@ output: md_document
 
 # Have democracies become more free and accountable since the 1990s?
 
-`{manystates}` provides data on states in the international system across time,
-assembling together datasets from reputable sources including
+`{manystates}` provides data on states in the international system across time.
+
+Datasets from reputable sources including
 [The Correlates of War project](http://correlatesofwar.org),
 [The Issue Correlates of War project](http://www.paulhensel.org/icow.html), and
-[Gleditsch and Ward's dataset](https://doi.org/10.1080/03050629908434958) on interstate system membership.
+[Gleditsch and Ward's dataset](https://doi.org/10.1080/03050629908434958) on interstate system membership are included.
 The package can also be used to study related features such as
 political regimes (`regimes` datacube), contiguity (`contiguity` datacube),
 leadership (`leaders` datacube), and economic indicators (`economics` datacube).
@@ -91,7 +92,7 @@ vdem <- vdem %>% dplyr::select(StateName, stateID, Year,
                               v2x_regime, v2x_accountability_osp,
                               v2x_freexp_altinf, v2x_cspart) %>%
   # select only the variables of interest
-  dplyr::filter(Year > 1989, v2x_regime == 2 | v2x_regime == 3) %>%
+  dplyr::filter(as.numeric(Year) > 1989, v2x_regime == 2 | v2x_regime == 3) %>%
   # filter for last 30 years (bigger than 1989) and for democracies only
   dplyr::rename(regime = v2x_regime,
                 freedom_expression = v2x_freexp_altinf,
@@ -144,7 +145,7 @@ Let's first compare the 10 states with the highest accountability scores
 library(kableExtra)
 
 vdem_account_10 <- vdem %>% # call data without assigning it
-  dplyr::filter(Year > 2011) %>% # filter for years in both datasets
+  dplyr::filter(as.numeric(Year) > 2011) %>% # filter for years in both datasets
   group_by(StateName) %>% # group by state name
   summarise(Mean_VDEM = mean(accountability)) %>%
   arrange(desc(Mean_VDEM)) %>% # arrange the data by mean, in decreasing order
@@ -173,52 +174,52 @@ full_join(vdem_account_10, fh_account_10) %>%
 <tbody>
   <tr>
    <td style="text-align:left;"> Denmark </td>
-   <td style="text-align:right;"> 0.9780 </td>
+   <td style="text-align:right;"> 0.9782500 </td>
    <td style="text-align:right;"> 1.0000000 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Sweden </td>
-   <td style="text-align:right;"> 0.9755 </td>
-   <td style="text-align:right;"> 1.0000000 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Norway </td>
-   <td style="text-align:right;"> 0.9723 </td>
+   <td style="text-align:right;"> 0.9721667 </td>
    <td style="text-align:right;"> 1.0000000 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Germany </td>
-   <td style="text-align:right;"> 0.9718 </td>
+   <td style="text-align:right;"> 0.9719167 </td>
    <td style="text-align:right;"> 1.0000000 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> Costa Rica </td>
-   <td style="text-align:right;"> 0.9696 </td>
-   <td style="text-align:right;"> NA </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Finland </td>
-   <td style="text-align:right;"> 0.9674 </td>
+   <td style="text-align:left;"> Norway </td>
+   <td style="text-align:right;"> 0.9695000 </td>
    <td style="text-align:right;"> 1.0000000 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Switzerland </td>
-   <td style="text-align:right;"> 0.9674 </td>
-   <td style="text-align:right;"> 1.0000000 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Australia </td>
-   <td style="text-align:right;"> 0.9671 </td>
+   <td style="text-align:right;"> 0.9682500 </td>
    <td style="text-align:right;"> 1.0000000 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Estonia </td>
-   <td style="text-align:right;"> 0.9665 </td>
+   <td style="text-align:right;"> 0.9676667 </td>
    <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
+   <td style="text-align:left;"> Costa Rica </td>
+   <td style="text-align:right;"> 0.9672500 </td>
+   <td style="text-align:right;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Finland </td>
+   <td style="text-align:right;"> 0.9665000 </td>
+   <td style="text-align:right;"> 1.0000000 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Australia </td>
+   <td style="text-align:right;"> 0.9623333 </td>
+   <td style="text-align:right;"> 1.0000000 </td>
+  </tr>
+  <tr>
    <td style="text-align:left;"> Chile </td>
-   <td style="text-align:right;"> 0.9644 </td>
+   <td style="text-align:right;"> 0.9621667 </td>
    <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
@@ -250,7 +251,7 @@ Let's compare which states appear as having multiple democratic regimes since 20
 
 ```r
 vdem_transition <- vdem %>% # saving this object to use later
-  dplyr::filter(Year > 2011) %>% # filter for years in both datasets
+  dplyr::filter(as.numeric(Year) > 2011) %>% # filter for years in both datasets
   group_by(StateName, regime_type) %>% # group by state and regime
   count() %>% # count grouped observations
   group_by(StateName) %>% # re-group by state name only 
@@ -287,7 +288,7 @@ dplyr::full_join(vdem_transition, fh_transition) %>%
   <tr>
    <td style="text-align:left;"> Austria </td>
    <td style="text-align:left;"> Electoral Democracy </td>
-   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 3 </td>
    <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
@@ -305,7 +306,7 @@ dplyr::full_join(vdem_transition, fh_transition) %>%
   <tr>
    <td style="text-align:left;"> Barbados </td>
    <td style="text-align:left;"> Liberal Democracy </td>
-   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 9 </td>
    <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
@@ -319,18 +320,6 @@ dplyr::full_join(vdem_transition, fh_transition) %>%
    <td style="text-align:left;"> Liberal Democracy </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:right;"> 1 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Benin </td>
-   <td style="text-align:left;"> Electoral Democracy </td>
-   <td style="text-align:right;"> 5 </td>
-   <td style="text-align:right;"> NA </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Benin </td>
-   <td style="text-align:left;"> Liberal Democracy </td>
-   <td style="text-align:right;"> 2 </td>
-   <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Bhutan </td>
@@ -341,55 +330,91 @@ dplyr::full_join(vdem_transition, fh_transition) %>%
   <tr>
    <td style="text-align:left;"> Bhutan </td>
    <td style="text-align:left;"> Liberal Democracy </td>
-   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 3 </td>
    <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> Chile </td>
-   <td style="text-align:left;"> Electoral Democracy </td>
-   <td style="text-align:right;"> 2 </td>
-   <td style="text-align:right;"> 1 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Chile </td>
-   <td style="text-align:left;"> Liberal Democracy </td>
-   <td style="text-align:right;"> 8 </td>
-   <td style="text-align:right;"> 8 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Czech Republic </td>
-   <td style="text-align:left;"> Electoral Democracy </td>
-   <td style="text-align:right;"> 2 </td>
-   <td style="text-align:right;"> NA </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Czech Republic </td>
-   <td style="text-align:left;"> Liberal Democracy </td>
-   <td style="text-align:right;"> 8 </td>
-   <td style="text-align:right;"> NA </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> France </td>
-   <td style="text-align:left;"> Electoral Democracy </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 5 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> France </td>
-   <td style="text-align:left;"> Liberal Democracy </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 4 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Ghana </td>
+   <td style="text-align:left;"> Botswana </td>
    <td style="text-align:left;"> Electoral Democracy </td>
    <td style="text-align:right;"> 3 </td>
    <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
+   <td style="text-align:left;"> Botswana </td>
+   <td style="text-align:left;"> Liberal Democracy </td>
+   <td style="text-align:right;"> 9 </td>
+   <td style="text-align:right;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Canada </td>
+   <td style="text-align:left;"> Electoral Democracy </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Canada </td>
+   <td style="text-align:left;"> Liberal Democracy </td>
+   <td style="text-align:right;"> 10 </td>
+   <td style="text-align:right;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Chile </td>
+   <td style="text-align:left;"> Electoral Democracy </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Chile </td>
+   <td style="text-align:left;"> Liberal Democracy </td>
+   <td style="text-align:right;"> 10 </td>
+   <td style="text-align:right;"> 8 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Cyprus </td>
+   <td style="text-align:left;"> Electoral Democracy </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Cyprus </td>
+   <td style="text-align:left;"> Liberal Democracy </td>
+   <td style="text-align:right;"> 11 </td>
+   <td style="text-align:right;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Czechia </td>
+   <td style="text-align:left;"> Electoral Democracy </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Czechia </td>
+   <td style="text-align:left;"> Liberal Democracy </td>
+   <td style="text-align:right;"> 10 </td>
+   <td style="text-align:right;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> France </td>
+   <td style="text-align:left;"> Electoral Democracy </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 5 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> France </td>
+   <td style="text-align:left;"> Liberal Democracy </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 4 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Ghana </td>
+   <td style="text-align:left;"> Electoral Democracy </td>
+   <td style="text-align:right;"> 9 </td>
+   <td style="text-align:right;"> NA </td>
+  </tr>
+  <tr>
    <td style="text-align:left;"> Ghana </td>
    <td style="text-align:left;"> Liberal Democracy </td>
-   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 3 </td>
    <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
@@ -401,7 +426,31 @@ dplyr::full_join(vdem_transition, fh_transition) %>%
   <tr>
    <td style="text-align:left;"> Greece </td>
    <td style="text-align:left;"> Liberal Democracy </td>
-   <td style="text-align:right;"> 8 </td>
+   <td style="text-align:right;"> 10 </td>
+   <td style="text-align:right;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Israel </td>
+   <td style="text-align:left;"> Electoral Democracy </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Israel </td>
+   <td style="text-align:left;"> Liberal Democracy </td>
+   <td style="text-align:right;"> 11 </td>
+   <td style="text-align:right;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Jamaica </td>
+   <td style="text-align:left;"> Electoral Democracy </td>
+   <td style="text-align:right;"> 11 </td>
+   <td style="text-align:right;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Jamaica </td>
+   <td style="text-align:left;"> Liberal Democracy </td>
+   <td style="text-align:right;"> 1 </td>
    <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
@@ -425,13 +474,13 @@ dplyr::full_join(vdem_transition, fh_transition) %>%
   <tr>
    <td style="text-align:left;"> Latvia </td>
    <td style="text-align:left;"> Liberal Democracy </td>
-   <td style="text-align:right;"> 8 </td>
+   <td style="text-align:right;"> 10 </td>
    <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Lithuania </td>
    <td style="text-align:left;"> Electoral Democracy </td>
-   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:right;"> 8 </td>
    <td style="text-align:right;"> 1 </td>
   </tr>
   <tr>
@@ -443,13 +492,13 @@ dplyr::full_join(vdem_transition, fh_transition) %>%
   <tr>
    <td style="text-align:left;"> Mauritius </td>
    <td style="text-align:left;"> Electoral Democracy </td>
-   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 9 </td>
    <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Mauritius </td>
    <td style="text-align:left;"> Liberal Democracy </td>
-   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 2 </td>
    <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
@@ -467,7 +516,7 @@ dplyr::full_join(vdem_transition, fh_transition) %>%
   <tr>
    <td style="text-align:left;"> Poland </td>
    <td style="text-align:left;"> Electoral Democracy </td>
-   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:right;"> 8 </td>
    <td style="text-align:right;"> 5 </td>
   </tr>
   <tr>
@@ -485,31 +534,31 @@ dplyr::full_join(vdem_transition, fh_transition) %>%
   <tr>
    <td style="text-align:left;"> Portugal </td>
    <td style="text-align:left;"> Liberal Democracy </td>
-   <td style="text-align:right;"> 9 </td>
+   <td style="text-align:right;"> 11 </td>
    <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> Seychelles </td>
+   <td style="text-align:left;"> Serbia </td>
    <td style="text-align:left;"> Electoral Democracy </td>
-   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 1 </td>
    <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> Seychelles </td>
-   <td style="text-align:left;"> Liberal Democracy </td>
-   <td style="text-align:right;"> 2 </td>
-   <td style="text-align:right;"> NA </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Slovakia </td>
-   <td style="text-align:left;"> Electoral Democracy </td>
-   <td style="text-align:right;"> 9 </td>
-   <td style="text-align:right;"> 2 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Slovakia </td>
+   <td style="text-align:left;"> Serbia </td>
    <td style="text-align:left;"> Liberal Democracy </td>
    <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Slovakia </td>
+   <td style="text-align:left;"> Electoral Democracy </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Slovakia </td>
+   <td style="text-align:left;"> Liberal Democracy </td>
+   <td style="text-align:right;"> 7 </td>
    <td style="text-align:right;"> 7 </td>
   </tr>
   <tr>
@@ -521,17 +570,29 @@ dplyr::full_join(vdem_transition, fh_transition) %>%
   <tr>
    <td style="text-align:left;"> Slovenia </td>
    <td style="text-align:left;"> Liberal Democracy </td>
-   <td style="text-align:right;"> 8 </td>
+   <td style="text-align:right;"> 10 </td>
    <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
    <td style="text-align:left;"> South Africa </td>
    <td style="text-align:left;"> Electoral Democracy </td>
-   <td style="text-align:right;"> 9 </td>
+   <td style="text-align:right;"> 11 </td>
    <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
    <td style="text-align:left;"> South Africa </td>
+   <td style="text-align:left;"> Liberal Democracy </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Suriname </td>
+   <td style="text-align:left;"> Electoral Democracy </td>
+   <td style="text-align:right;"> 11 </td>
+   <td style="text-align:right;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Suriname </td>
    <td style="text-align:left;"> Liberal Democracy </td>
    <td style="text-align:right;"> 1 </td>
    <td style="text-align:right;"> NA </td>
@@ -551,7 +612,7 @@ dplyr::full_join(vdem_transition, fh_transition) %>%
   <tr>
    <td style="text-align:left;"> Trinidad and Tobago </td>
    <td style="text-align:left;"> Electoral Democracy </td>
-   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 3 </td>
    <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
@@ -582,7 +643,7 @@ VDEM and freedom house appear to differ quite a bit in the cases that transition
 
 ```r
 transition_vdem <- vdem %>% # saving this object to use later
-  dplyr::filter(Year > 2011) %>% # filter for years in both datasets
+  dplyr::filter(as.numeric(Year) > 2011) %>% # filter for years in both datasets
   group_by(StateName, regime_type) %>% # group by state and regime
   summarise(Years_VDEM = paste(Year, collapse = ", ")) %>%
   group_by(StateName) %>% # re-group by state name only 
@@ -622,13 +683,13 @@ inner_join(transition_vdem, transition_fh) %>%
   <tr>
    <td style="text-align:left;"> Chile </td>
    <td style="text-align:left;"> Liberal Democracy </td>
-   <td style="text-align:left;"> 2021, 2018, 2017, 2016, 2015, 2014, 2013, 2012 </td>
+   <td style="text-align:left;"> 2023, 2022, 2021, 2018, 2017, 2016, 2015, 2014, 2013, 2012 </td>
    <td style="text-align:left;"> 2020, 2018, 2017, 2016, 2015, 2014, 2013, 2012 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Lithuania </td>
    <td style="text-align:left;"> Electoral Democracy </td>
-   <td style="text-align:left;"> 2021, 2020, 2019, 2018, 2017, 2016 </td>
+   <td style="text-align:left;"> 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016 </td>
    <td style="text-align:left;"> 2020 </td>
   </tr>
   <tr>
@@ -640,7 +701,7 @@ inner_join(transition_vdem, transition_fh) %>%
   <tr>
    <td style="text-align:left;"> Poland </td>
    <td style="text-align:left;"> Electoral Democracy </td>
-   <td style="text-align:left;"> 2021, 2020, 2019, 2018, 2017, 2016 </td>
+   <td style="text-align:left;"> 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016 </td>
    <td style="text-align:left;"> 2020, 2019, 2018, 2017, 2016 </td>
   </tr>
   <tr>
@@ -652,13 +713,13 @@ inner_join(transition_vdem, transition_fh) %>%
   <tr>
    <td style="text-align:left;"> Slovakia </td>
    <td style="text-align:left;"> Electoral Democracy </td>
-   <td style="text-align:left;"> 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013 </td>
+   <td style="text-align:left;"> 2023, 2022, 2021, 2020, 2019 </td>
    <td style="text-align:left;"> 2019, 2018 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Slovakia </td>
    <td style="text-align:left;"> Liberal Democracy </td>
-   <td style="text-align:left;"> 2012 </td>
+   <td style="text-align:left;"> 2018, 2017, 2016, 2015, 2014, 2013, 2012 </td>
    <td style="text-align:left;"> 2020, 2017, 2016, 2015, 2014, 2013, 2012 </td>
   </tr>
 </tbody>
