@@ -5,24 +5,23 @@
     <link>http://globalgov.ch/blog/</link>
     <description>Recent content in GGO Blog on Geneva Global Governance Observatory</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 23 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://globalgov.ch/blog/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="http://globalgov.ch/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How Do Environmental Treaties Connect?</title>
       <link>http://globalgov.ch/blog/how-do-environmental-treaties-connect/</link>
-      <pubDate>Tue, 23 Apr 2024 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://globalgov.ch/blog/how-do-environmental-treaties-connect/</guid>
-      <description>Connecting Environmental Treaties {manyenviron} stores several datasets on environmental agreements, memeberships, and references in different databases. There are many different ways in which treaties could be linked.</description>
+      <description>There are many different ways in which environmental treaties can be linked. Here we propose a few ways in which data in manyenviron can help tell stories about the environment.</description>
     </item>
     
     <item>
       <title>Working with manystates data</title>
       <link>http://globalgov.ch/blog/working-with-manystates-data/</link>
-      <pubDate>Tue, 23 Apr 2024 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://globalgov.ch/blog/working-with-manystates-data/</guid>
-      <description>Have democracies become more free and accountable since the 1990s? {manystates} provides data on states in the international system across time, assembling together datasets from reputable sources including The Correlates of War project, The Issue Correlates of War project, and Gleditsch and Ward&amp;rsquo;s dataset on interstate system membership.</description>
+      <description>Have democracies become more free and accountable since the 1990s? We use manystates data on states in the international system across time to investigate this question.</description>
     </item>
     
   </channel>
