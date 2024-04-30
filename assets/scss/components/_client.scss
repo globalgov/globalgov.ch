@@ -4,14 +4,11 @@
     margin-bottom: 100px;
   }
   &-wrapper{
-    display: flex;
-    flex-wrap: wrap;
     @include desktop{
       justify-content: center;
     }
   }
   &-item{
-    text-align: center;
     width: 20%;
     margin-bottom: 50px;
     @include desktop{
