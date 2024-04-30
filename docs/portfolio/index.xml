@@ -7,12 +7,13 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="http://globalgov.ch/portfolio/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>manyenviron data</title>
+      <title>An overview of the GGO data</title>
       <link>http://globalgov.ch/portfolio/manydata/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://globalgov.ch/portfolio/manydata/</guid>
-      <description>Manyenviron Data {manyenviron} stores several datasets on various aspects of environmental treaties in different databases. For example, the Agreements database is made of multiple datasets of environmental treaty titles with specific information such as the agreement type (e.</description>
+      <description>We have collected lots of data on about Global Governance from multiple sources!
+All of the data is publicly available in the form of R packages for various issue-domains of global Governance.</description>
     </item>
     
   </channel>

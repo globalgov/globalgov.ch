@@ -1,5 +1,5 @@
 enable : true
-heading : "The DATA"
+heading : ""
 counter_item: 
   - title: "Environment"
     number: "Over 16000 observations on environemntal agreements across 6 datasets (4% overlap)"

@@ -1,46 +1,30 @@
 ---
-title: manyenviron data
+title: An overview of the GGO data
 output: github_document
 category:
 - Data Packages
-image: images/blog/manyenviron_hexlogo.png
+image: images/backgrounds/earth_network.jpg
 project_images:
-- images/blog/manyenviron_hexlogo.png
+- images/backgrounds/earth_network.jpg
 type: portfolio
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(collapse = TRUE, comment = "#>",
-                      message = FALSE, warning = FALSE)
-options(rmarkdown.html_vignette.check_title = FALSE)
-```
+We have collected lots of data on about Global Governance from multiple sources!
 
-## Manyenviron Data
+All of the data is publicly available in the form of R packages for various issue-domains of global Governance.
 
-`{manyenviron}` stores several datasets on various aspects of environmental treaties in different databases.
-For example, the **Agreements** database is made of multiple datasets of environmental treaty titles with
-specific information such as the agreement type (e.g. agreements, protocols, amendments, declarations), if
-they are bilateral or multilateral, and some important dates such as the signature or entry into force.
-The **Memberships** database contains lists of countries with the treaties to which they are parties to. It
-also includes information on the signature date of the treaty or the withdrawal date of a party.
-The **References** database is composed of a dataset that indicates the relationship (e.g. amended by,
-cites, superseded by) between two treaties.
+Currently there are 4 data packages:
 
-For a quick overview of the database and dataset in `{manyenviron}`, we can use the `compare_dimensions()` function from `{manydata}`.
+- [manyenviron](https://github.com/globalgov/manyenviron)
+- [manytrade](https://github.com/globalgov/manytrade)
+- [manyhealth](https://globalgov.github.io/manyhealth/)
+- [manystates](https://github.com/globalgov/manystates)
 
-```{r, eval = FALSE}
-#remotes::install_github("globalgov/manyenviron")
-library(manydata)
-library(manyenviron)
-manydata::compare_dimensions(manyenviron::agreements)
-manydata::compare_dimensions(manyenviron::memberships)
-manydata::compare_dimensions(manyenviron::references)
-```
+We also developed methods to facilitate that users download, connect, and correct this data as they choose. Some of the methodologiocal packages include:
 
-To view the bibliographic references for a dataset, a database, or the whole package, we can also use `call_sources()` from `{manydata}`.
+- [manydata](https://manydata.ch/)
+- [messydates](https://globalgov.github.io/messydates/)
+- [manypkgs](https://globalgov.github.io/manypkgs/)
+- [manynet](https://stocnet.github.io/manynet/)
 
-```{r, eval = FALSE}
-manydata::call_sources("manyenviron", "agreements")
-manydata::call_sources("manyenviron", "memberships")
-manydata::call_sources("manyenviron", "references")
-```
+Please make sure to check them out and let us know how we can help further!

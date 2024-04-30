@@ -1,5 +1,4 @@
 enable        : true
 title         : "Our partners:"
 client_logos  : 
-  ["images/clients/Logo_CIES.png",
-  "images/clients/snflogo.png"]
+  ["images/clients/Logo_CIES.png", "images/clients/snflogo.png"]

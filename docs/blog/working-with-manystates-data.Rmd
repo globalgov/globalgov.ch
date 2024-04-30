@@ -2,7 +2,7 @@
 feature_image: images/blog/manystates_hexlogo.png
 image: images/blog/manystates_hexlogo.png
 title: "Working with manystates data"
-date: "2023"
+date: ""
 output: md_document
 ---
 

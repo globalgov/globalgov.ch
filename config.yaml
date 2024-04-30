@@ -31,7 +31,15 @@ params:
     primary_button_url: blog
     secondary_button: GGO Data
     secondary_button_url: portfolio
-    tagline: Welcome
+  blog:
+    read_more: read more
+  portfolio:
+    enable: yes
+    title: GGO Data
+    subtitle: Need Gobal Governance Data?
+    view_project: View data
+    more_works: More data
+    scroll_down: scroll down
   call_to_action:
     background_image: images/backgrounds/cta-background.jpg
     enable: yes
@@ -39,7 +47,7 @@ params:
     primary_button_url: contact
     secondary_button: Not Convinced
     secondary_button_url: portfolio
-    title: Would you like to contribute to the project or have any questions? Get in touch with us!
+    title: Get in touch with us!
   contactForm:
     placeholder_about_the_project: Message
     placeholder_email: Email
@@ -84,7 +92,3 @@ params:
     name: Get in touch
     status: yes
     url: contact
-  portfolio:
-    enable: yes
-    subtitle: Need data about Global Governance?
-    title: Data

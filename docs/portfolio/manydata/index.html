@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us"><head>
   <meta charset="utf-8" />
-  <title>manyenviron data</title>
+  <title>An overview of the GGO data</title>
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -103,34 +103,31 @@
       <div class="col-lg-8 mx-auto">
         <div class="site-project-single">
           <h1>
-            manyenviron data
+            An overview of the GGO data
           </h1>
           <div class="site-project-single-description">
-            <h2 id="manyenviron-data">Manyenviron Data</h2>
-<p><code>{manyenviron}</code> stores several datasets on various aspects of environmental treaties in different databases.
-For example, the <strong>Agreements</strong> database is made of multiple datasets of environmental treaty titles with
-specific information such as the agreement type (e.g. agreements, protocols, amendments, declarations), if
-they are bilateral or multilateral, and some important dates such as the signature or entry into force.
-The <strong>Memberships</strong> database contains lists of countries with the treaties to which they are parties to. It
-also includes information on the signature date of the treaty or the withdrawal date of a party.
-The <strong>References</strong> database is composed of a dataset that indicates the relationship (e.g. amended by,
-cites, superseded by) between two treaties.</p>
-<p>For a quick overview of the database and dataset in <code>{manyenviron}</code>, we can use the <code>compare_dimensions()</code> function from <code>{manydata}</code>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e">#remotes::install_github(&#34;globalgov/manyenviron&#34;)</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(manydata)
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(manyenviron)
-</span></span><span style="display:flex;"><span>manydata<span style="color:#f92672">::</span><span style="color:#a6e22e">compare_dimensions</span>(manyenviron<span style="color:#f92672">::</span>agreements)
-</span></span><span style="display:flex;"><span>manydata<span style="color:#f92672">::</span><span style="color:#a6e22e">compare_dimensions</span>(manyenviron<span style="color:#f92672">::</span>memberships)
-</span></span><span style="display:flex;"><span>manydata<span style="color:#f92672">::</span><span style="color:#a6e22e">compare_dimensions</span>(manyenviron<span style="color:#f92672">::</span>references)
-</span></span></code></pre></div><p>To view the bibliographic references for a dataset, a database, or the whole package, we can also use <code>call_sources()</code> from <code>{manydata}</code>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>manydata<span style="color:#f92672">::</span><span style="color:#a6e22e">call_sources</span>(<span style="color:#e6db74">&#34;manyenviron&#34;</span>, <span style="color:#e6db74">&#34;agreements&#34;</span>)
-</span></span><span style="display:flex;"><span>manydata<span style="color:#f92672">::</span><span style="color:#a6e22e">call_sources</span>(<span style="color:#e6db74">&#34;manyenviron&#34;</span>, <span style="color:#e6db74">&#34;memberships&#34;</span>)
-</span></span><span style="display:flex;"><span>manydata<span style="color:#f92672">::</span><span style="color:#a6e22e">call_sources</span>(<span style="color:#e6db74">&#34;manyenviron&#34;</span>, <span style="color:#e6db74">&#34;references&#34;</span>)
-</span></span></code></pre></div>
+            <p>We have collected lots of data on about Global Governance from multiple sources!</p>
+<p>All of the data is publicly available in the form of R packages for various issue-domains of global Governance.</p>
+<p>Currently there are 4 data packages:</p>
+<ul>
+<li><a href="https://github.com/globalgov/manyenviron">manyenviron</a></li>
+<li><a href="https://github.com/globalgov/manytrade">manytrade</a></li>
+<li><a href="https://globalgov.github.io/manyhealth/">manyhealth</a></li>
+<li><a href="https://github.com/globalgov/manystates">manystates</a></li>
+</ul>
+<p>We also developed methods to facilitate that users download, connect, and correct this data as they choose. Some of the methodologiocal packages include:</p>
+<ul>
+<li><a href="https://manydata.ch/">manydata</a></li>
+<li><a href="https://globalgov.github.io/messydates/">messydates</a></li>
+<li><a href="https://globalgov.github.io/manypkgs/">manypkgs</a></li>
+<li><a href="https://stocnet.github.io/manynet/">manynet</a></li>
+</ul>
+<p>Please make sure to check them out and let us know how we can help further!</p>
+
           </div>
           <div class="site-project-single-image">
             
-            <img src="http://globalgov.ch/images/blog/manyenviron_hexlogo.png" alt="project image">
+            <img src="http://globalgov.ch/images/backgrounds/earth_network.jpg" alt="project image">
             
           </div>
           
@@ -146,7 +143,7 @@ cites, superseded by) between two treaties.</p>
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h1 class="site-cta-title">Would you like to contribute to the project or have any questions? Get in touch with us!</h1>
+          <h1 class="site-cta-title">Get in touch with us!</h1>
           <ul class="site-cta-buttons">
             <li>
               <a href="http://globalgov.ch/contact" class="btn btn-secondary">
