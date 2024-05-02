@@ -1,11 +1,19 @@
 ---
-feature_image: images/blog/manyenviron_hexlogo.png
-image: images/blog/manyenviron_hexlogo.png
+feature_image: images/blog/tree.png
+image: images/blog/leaves-continent.jpg
 title: "How Do Environmental Treaties Connect?"
-output: md_document
-date: ""
+subtitle: "There are many different ways in which environmental treaties can be linked. Here we propose a few ways in which manyenviron data in can help tell stories about the environment."
+output:
+  blogdown::html_page:
+    toc: false
 ---
 
-There are many different ways in which environmental treaties can be linked. Here we propose a few ways in which data in [manyenviron](https://globalgov.github.io/manyenviron/index.html) can help tell stories about the environment.
+<iframe height="1000" width="100%" frameborder="no" src="https://globalgov.github.io/manyenviron/articles/connect.html"> </iframe>
 
-[Please click here to see the blog post.](https://globalgov.github.io/manyenviron/articles/connect.html)
+Want to try yourself? Please feel free to play with data on environmental treaties lineages!
+
+<iframe height="800" width="100%" frameborder="no" src="https://genevaglobalgov.shinyapps.io/lineage/"> </iframe>
+
+What about country memberships in environmental treaties, are you interested in that?
+
+<iframe height="800" width="100%" frameborder="no" src="https://genevaglobalgov.shinyapps.io/memberships/"> </iframe>

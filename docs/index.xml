@@ -17,21 +17,40 @@ All of the data is publicly available in the form of R packages for various issu
     </item>
     
     <item>
+      <title>Have democracies become more free and accountable since the 1990s?</title>
+      <link>http://globalgov.ch/blog/working-with-manystates-data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://globalgov.ch/blog/working-with-manystates-data/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
       <title>How Do Environmental Treaties Connect?</title>
       <link>http://globalgov.ch/blog/how-do-environmental-treaties-connect/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://globalgov.ch/blog/how-do-environmental-treaties-connect/</guid>
-      <description>There are many different ways in which environmental treaties can be linked. Here we propose a few ways in which data in manyenviron can help tell stories about the environment.</description>
+      <description>Want to try yourself? Please feel free to play with data on environmental treaties lineages!
+What about country memberships in environmental treaties, are you interested in that?</description>
     </item>
     
     <item>
-      <title>Working with manystates data</title>
-      <link>http://globalgov.ch/blog/working-with-manystates-data/</link>
+      <title>How to match agreements across different datasets?</title>
+      <link>http://globalgov.ch/blog/manypkgs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://globalgov.ch/blog/working-with-manystates-data/</guid>
-      <description>Have democracies become more free and accountable since the 1990s? We use manystates data on states in the international system across time to investigate this question.</description>
+      <guid>http://globalgov.ch/blog/manypkgs/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>What Does Global Health Governance Look Like?</title>
+      <link>http://globalgov.ch/blog/manyhealth/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://globalgov.ch/blog/manyhealth/</guid>
+      <description> </description>
     </item>
     
   </channel>
