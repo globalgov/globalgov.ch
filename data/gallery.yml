@@ -1,8 +1,0 @@
-gallery:
-  enable : true
-  title : Our Packages
-  gallery_item ::
-  - thumb : images/client/manypkgs.jpg
-    name : "manypkgs"
-    company_position: "Support for Creating Ensembled Global Governance Data"
-    website :  "https://globalgov.github.io/manypkgs/"

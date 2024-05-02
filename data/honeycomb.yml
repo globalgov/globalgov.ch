@@ -1,0 +1,39 @@
+enable  : true
+title   : Our packages
+honeycomb_item :
+  - thumb : images/clients/manynet.png
+    name : "manynet"
+    company_position: "Many Ways to Make, Manipulate, and Map Myriad Networks"
+    website :  "https://stocnet.github.io/manynet/"
+  - thumb : images/clients/messydates.png
+    name : "messydates"
+    company_position: "R package for Extended Date/Time Format (EDTF)"
+    website :  "https://globalgov.github.io/messydates/"
+  - thumb : images/clients/migraph.png
+    name : "migraph"
+    company_position: "Tools for multimodal and multilevel network analysis"
+    website :  "https://stocnet.github.io/migraph/"
+  - thumb : images/clients/manypkgs.jpg
+    name : "manypkgs"
+    company_position: "Support for creating new manyverse packages"
+    website :  "https://globalgov.github.io/manypkgs/"
+  - thumb : images/clients/manydata.jpg
+    name : "manydata"
+    company_position: "The portal for global governance data"
+    website :  "https://globalgov.github.io/manydata/"
+  - thumb : images/clients/manyenviron.jpg
+    name : "manyenviron"
+    company_position: "Data on environmental agreements"
+    website :  "https://globalgov.github.io/manyenviron/"
+  - thumb : images/clients/manytrade.jpg
+    name : "manytrade"
+    company_position: "Data on trade agreements"
+    website :  "https://globalgov.github.io/manytrade/"
+  - thumb : images/clients/manyhealth.jpg
+    name : "manyhealth"
+    company_position: "Data on health agreements"
+    website :  "https://globalgov.github.io/manyhealth/"
+  - thumb : images/clients/manystates.jpg
+    name : "manystates"
+    company_position: "Data on sovereign states"
+    website :  "https://globalgov.github.io/manystates/"

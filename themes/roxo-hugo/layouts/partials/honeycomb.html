@@ -1,6 +1,6 @@
-{{ with .Site.Data.gallery }}
+{{ with .Site.Data.honeycomb }}
   {{ if .enable }}
-  <section class="site-gallery">
+  <section class="site-honeycomb">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -13,10 +13,10 @@
             </p>
           </div>
         </div>
-        {{ range .gallery_item }}
+        {{ range .honeycomb_item }}
         <div class="col-lg-4 col-md-6">
-          <div class="site-gallery-item">
-            <div class="site-gallery-item-header">
+          <div class="site-honeycomb-item">
+            <div class="site-honeycomb-item-header">
               <div class="thumb">
                 <img src="{{ .thumb | absURL }}" alt="user-thumb-one">
               </div>
@@ -25,7 +25,7 @@
                 <p>{{ .company_position }}</p>
               </div>
             </div>
-            <p class="site-gallery-item-body">
+            <p class="site-honeycomb-item-body">
               {{ .quote }}
             </p>
             <a href="{{ .website | absURL }}" class="read-more">read more</a>

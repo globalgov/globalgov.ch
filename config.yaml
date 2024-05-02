@@ -92,3 +92,8 @@ params:
     name: Get in touch
     status: yes
     url: contact
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

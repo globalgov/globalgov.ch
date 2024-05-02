@@ -23,6 +23,15 @@ $(document).ready(function() {
     $('.site-testimonial-item').removeClass('inactive');
     $('.site-testimonial-item').removeClass('active');
   });
+  
+  $('.site-honeycomb-item').on('mouseenter', function(){
+    $('.site-honeycomb-item').addClass('inactive');
+    $(this).removeClass('inactive').addClass('active');
+  });
+  $('.site-honeycomb-item').on('mouseleave', function(){
+    $('.site-honeycomb-item').removeClass('inactive');
+    $('.site-honeycomb-item').removeClass('active');
+  });
 });
 
 $(window).on('scroll', function () {
