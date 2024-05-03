@@ -3,6 +3,7 @@ feature_image: images/blog/tree.png
 image: images/blog/leaves-continent.jpg
 title: "How Do Environmental Treaties Connect?"
 subtitle: "There are many different ways in which environmental treaties can be linked. Here we propose a few ways in which manyenviron data in can help tell stories about the environment."
+weight: 2
 output:
   blogdown::html_page:
     toc: false

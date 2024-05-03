@@ -3,6 +3,7 @@ feature_image: images/blog/health-icons.jpg
 image: images/blog/dheart.jpg
 title: "What Does Global Health Governance Look Like?"
 subtitle: "We use manyhealth data to look at this question."
+weight: 3
 output:
   blogdown::html_page:
     toc: false

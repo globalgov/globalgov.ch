@@ -1,6 +1,7 @@
 ---
 title: How to get GGO Data
 image: images/clients/manydataLogo.png
+weight: 2
 type: portfolio
 output:
   blogdown::html_page:

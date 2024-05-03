@@ -1,8 +1,7 @@
 ---
 title: The PANARCHIC Project
 output: html_document
-category:
-- Data Packages
+weight: 1
 image: images/backgrounds/earth_network.jpg
 type: portfolio
 ---

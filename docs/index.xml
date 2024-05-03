@@ -7,21 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="http://globalgov.ch/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Environmental treaties</title>
-      <link>http://globalgov.ch/portfolio/manyenviron_data/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://globalgov.ch/portfolio/manyenviron_data/</guid>
-      <description>manyenviron is a data package in the many universe of packages. It currently includes an ensemble of datasets on international environmental agreements, and states’ membership or other relationships to those agreements.</description>
-    </item>
-    
-    <item>
       <title>Have democracies become more free and accountable since the 1990s?</title>
       <link>http://globalgov.ch/blog/working-with-manystates-data/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://globalgov.ch/blog/working-with-manystates-data/</guid>
       <description> </description>
+    </item>
+    
+    <item>
+      <title>The PANARCHIC Project</title>
+      <link>http://globalgov.ch/portfolio/panarchic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://globalgov.ch/portfolio/panarchic/</guid>
+      <description>Led by Dr. James Hollway, hosted at the Centre for International and Environmental Studies (CIES), and funded by the Swiss National Science Foundation (SNSF), the &amp;ldquo;PANARCHIC: Power and Networks and the Rate of Change in Institutional Complexes&amp;rdquo; project has started in Semptember 2020.</description>
     </item>
     
     <item>
@@ -44,6 +44,24 @@ What about country memberships in environmental treaties, are you interested in 
     </item>
     
     <item>
+      <title>States and Governance Indicators</title>
+      <link>http://globalgov.ch/portfolio/manystates/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://globalgov.ch/portfolio/manystates/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>What Does Global Health Governance Look Like?</title>
+      <link>http://globalgov.ch/blog/manyhealth/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://globalgov.ch/blog/manyhealth/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
       <title>How to match agreements across different datasets?</title>
       <link>http://globalgov.ch/blog/manypkgs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -53,20 +71,29 @@ What about country memberships in environmental treaties, are you interested in 
     </item>
     
     <item>
-      <title>The PANARCHIC Project</title>
-      <link>http://globalgov.ch/portfolio/panarchic/</link>
+      <title>Trade Agreements</title>
+      <link>http://globalgov.ch/portfolio/manytrade/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://globalgov.ch/portfolio/panarchic/</guid>
-      <description>Led by Dr. James Hollway, hosted at the Centre for International and Environmental Studies (CIES), and funded by the Swiss National Science Foundation (SNSF), the &amp;ldquo;PANARCHIC: Power and Networks and the Rate of Change in Institutional Complexes&amp;rdquo; project has started in Semptember 2020.</description>
+      <guid>http://globalgov.ch/portfolio/manytrade/</guid>
+      <description> </description>
     </item>
     
     <item>
-      <title>What Does Global Health Governance Look Like?</title>
-      <link>http://globalgov.ch/blog/manyhealth/</link>
+      <title>Health Agreements</title>
+      <link>http://globalgov.ch/portfolio/manyhealth/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://globalgov.ch/blog/manyhealth/</guid>
+      <guid>http://globalgov.ch/portfolio/manyhealth/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>Environmental Treaties</title>
+      <link>http://globalgov.ch/portfolio/manyenviron_data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://globalgov.ch/portfolio/manyenviron_data/</guid>
       <description> </description>
     </item>
     
