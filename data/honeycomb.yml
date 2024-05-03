@@ -13,27 +13,27 @@ honeycomb_item :
     name : "migraph"
     company_position: "Tools for multimodal and multilevel network analysis"
     website :  "https://stocnet.github.io/migraph/"
-  - thumb : images/clients/manypkgs.jpg
-    name : "manypkgs"
-    company_position: "Support for creating new manyverse packages"
-    website :  "https://globalgov.github.io/manypkgs/"
-  - thumb : images/clients/manydata.jpg
+  - thumb : images/clients/manydataLogo.png
     name : "manydata"
     company_position: "The portal for global governance data"
     website :  "https://globalgov.github.io/manydata/"
-  - thumb : images/clients/manyenviron.jpg
+  - thumb : images/clients/manypkgslogo.png
+    name : "manypkgs"
+    company_position: "Support for creating new manyverse packages"
+    website :  "https://globalgov.github.io/manypkgs/"
+  - thumb : images/clients/manyenviron_hexlogo.png
     name : "manyenviron"
     company_position: "Data on environmental agreements"
     website :  "https://globalgov.github.io/manyenviron/"
-  - thumb : images/clients/manytrade.jpg
+  - thumb : images/clients/manytradeContainer.png
     name : "manytrade"
     company_position: "Data on trade agreements"
     website :  "https://globalgov.github.io/manytrade/"
-  - thumb : images/clients/manyhealth.jpg
+  - thumb : images/clients/manyhealthLogo.png
     name : "manyhealth"
     company_position: "Data on health agreements"
     website :  "https://globalgov.github.io/manyhealth/"
-  - thumb : images/clients/manystates.jpg
+  - thumb : images/clients/manystates_hexlogo.png
     name : "manystates"
     company_position: "Data on sovereign states"
     website :  "https://globalgov.github.io/manystates/"
