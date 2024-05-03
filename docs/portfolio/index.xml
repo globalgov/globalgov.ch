@@ -7,13 +7,30 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="http://globalgov.ch/portfolio/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>An overview of the GGO data</title>
+      <title>Environmental treaties</title>
+      <link>http://globalgov.ch/portfolio/manyenviron_data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://globalgov.ch/portfolio/manyenviron_data/</guid>
+      <description>manyenviron is a data package in the many universe of packages. It currently includes an ensemble of datasets on international environmental agreements, and states’ membership or other relationships to those agreements.</description>
+    </item>
+    
+    <item>
+      <title>How to get GGO Data</title>
       <link>http://globalgov.ch/portfolio/manydata/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://globalgov.ch/portfolio/manydata/</guid>
-      <description>We have collected lots of data on about Global Governance from multiple sources!
-All of the data is publicly available in the form of R packages for various issue-domains of global Governance.</description>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>The PANARCHIC Project</title>
+      <link>http://globalgov.ch/portfolio/panarchic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://globalgov.ch/portfolio/panarchic/</guid>
+      <description>Led by Dr. James Hollway, hosted at the Centre for International and Environmental Studies (CIES), and funded by the Swiss National Science Foundation (SNSF), the &amp;ldquo;PANARCHIC: Power and Networks and the Rate of Change in Institutional Complexes&amp;rdquo; project has started in Semptember 2020.</description>
     </item>
     
   </channel>

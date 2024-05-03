@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us"><head>
   <meta charset="utf-8" />
-  <title>How to get GGO Data</title>
+  <title>Environmental treaties</title>
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -103,25 +103,28 @@
       <div class="col-lg-8 mx-auto">
         <div class="site-project-single">
           <h1>
-            How to get GGO Data
+            Environmental treaties
           </h1>
           <div class="site-project-single-description">
-            <iframe height="1000" width="100%" frameborder="no" src="https://manydata.ch/"> </iframe>
-
+            <p><a href="https://globalgov.github.io/manyenviron/">manyenviron</a> is a data package in the many universe of packages. It currently includes an ensemble of datasets on international environmental agreements, and states’ membership or other relationships to those agreements.</p>
+<p>With the help of the <a href="https://manydata.ch/">manydata</a> portal we have made it easy to install and work with global governance data in R. Simply install the core package, manydata, as follows, and then you can discover, install and update various “many” packages from the console.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e">#utils::install.packages(&#34;manydata&#34;)</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(manydata)
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#manydata::call_packages() # to see all available package</span>
+</span></span><span style="display:flex;"><span>manydata<span style="color:#f92672">::</span><span style="color:#a6e22e">call_packages</span>(<span style="color:#e6db74">&#34;manyenviron&#34;</span>) <span style="color:#75715e"># to download manyenviron</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">data</span>(package <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;manyenviron&#34;</span>)
+</span></span><span style="display:flex;"><span>knitr<span style="color:#f92672">::</span><span style="color:#a6e22e">kable</span>(manydata<span style="color:#f92672">::</span><span style="color:#a6e22e">call_sources</span>(<span style="color:#e6db74">&#34;manyenviron&#34;</span>, <span style="color:#e6db74">&#34;agreements&#34;</span>))
+</span></span></code></pre></div><p>To &ldquo;compare&rdquo; the data available in manyenviron, you can use the <code>compare_*</code> functions in manydata.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">data</span>(<span style="color:#e6db74">&#34;agreements&#34;</span>, package <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;manyenviron&#34;</span>)
+</span></span><span style="display:flex;"><span>manydata<span style="color:#f92672">::</span><span style="color:#a6e22e">compare_dimensions</span>(agreements)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(manydata<span style="color:#f92672">::</span><span style="color:#a6e22e">compare_overlap</span>(agreements))
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(manydata<span style="color:#f92672">::</span><span style="color:#a6e22e">compare_categories</span>(agreements))
+</span></span></code></pre></div><p>We can also consolidate these datasets with the <code>consolidate()</code> function.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">consolidate</span>(datacube <span style="color:#f92672">=</span> emperors, rows <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;every&#34;</span>, cols <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;every&#34;</span>, resolve <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;random&#34;</span>, key <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;ID&#34;</span>)
+</span></span></code></pre></div>
           </div>
           <div class="site-project-single-image">
             
-          </div>
-          
-          <div class="site-project-single-action">
-            <a href="http://globalgov.ch/portfolio/manyenviron_data/">
-              <span class="link-area">
-                <span data-text="Next Project">
-                  Next
-                </span>
-              </span>
-              <img src="http://globalgov.ch/images/to-top.svg" alt="next project">
-            </a>
           </div>
           
         </div>
