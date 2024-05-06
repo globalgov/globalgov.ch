@@ -1,20 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Providing data across various issue domains of Global Governance on Geneva Global Governance Observatory</title>
+    <title>Providing data across various issue domains of global governance on Geneva Global Governance Observatory</title>
     <link>http://globalgov.ch/portfolio/</link>
-    <description>Recent content in Providing data across various issue domains of Global Governance on Geneva Global Governance Observatory</description>
+    <description>Recent content in Providing data across various issue domains of global governance on Geneva Global Governance Observatory</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="http://globalgov.ch/portfolio/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>The PANARCHIC Project</title>
-      <link>http://globalgov.ch/portfolio/panarchic/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://globalgov.ch/portfolio/panarchic/</guid>
-      <description>Led by Dr. James Hollway, hosted at the Centre for International and Environmental Studies (CIES), and funded by the Swiss National Science Foundation (SNSF), the &amp;ldquo;PANARCHIC: Power and Networks and the Rate of Change in Institutional Complexes&amp;rdquo; project has started in Semptember 2020.</description>
-    </item>
-    
     <item>
       <title>How to get GGO Data</title>
       <link>http://globalgov.ch/portfolio/manydata/</link>

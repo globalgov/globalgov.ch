@@ -3,15 +3,16 @@
   <section class="site-counter" id="counter">
     <div class="container">
       <div class="row">
-        <div class="col-12">
+        <div class="col-12 text-center">
           <div class="section-title">
-            <h3 class="text-blue">{{ .heading }}</h3>
+            <h3 class="text-white">{{ .heading }}</h3>
+            <h5 class="site-tag"> {{ .tag }} </h5>
           </div>
         </div>
         {{ range .counter_item }}
-        <div class="col-lg-4 col-md-6">
-          <div class="site-counter-item">
-            <span class="site-counter-item-title">{{ .title }}</span>
+        <div class="col-lg-3 col-md-6">
+          <div class="site-counter-item text-center">
+            <h4 class="site-counter-item-text text-white">{{ .title }}</h4>
             <h4 class="site-counter-item-text">{{ .number }}</h4>
           </div>
         </div>
