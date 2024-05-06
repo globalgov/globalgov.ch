@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Providing data across various issue domains of global governance on Geneva Global Governance Observatory</title>
+    <link>http://globalgov.ch/portfolio/</link>
+    <description>Recent content in Providing data across various issue domains of global governance on Geneva Global Governance Observatory</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://globalgov.ch/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to get GGO Data</title>
+      <link>http://globalgov.ch/portfolio/manydata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://globalgov.ch/portfolio/manydata/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>States and Governance Indicators</title>
+      <link>http://globalgov.ch/portfolio/manystates/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://globalgov.ch/portfolio/manystates/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>Trade Agreements</title>
+      <link>http://globalgov.ch/portfolio/manytrade/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://globalgov.ch/portfolio/manytrade/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>Health Agreements</title>
+      <link>http://globalgov.ch/portfolio/manyhealth/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://globalgov.ch/portfolio/manyhealth/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>Environmental Treaties</title>
+      <link>http://globalgov.ch/portfolio/manyenviron_data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://globalgov.ch/portfolio/manyenviron_data/</guid>
+      <description> </description>
+    </item>
+    
+  </channel>
+</rss>

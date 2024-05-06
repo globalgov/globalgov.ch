@@ -1,5 +1,4 @@
 baseURL: http://globalgov.ch
-publishDir: docs
 languageCode: en-us
 title: Geneva Global Governance Observatory
 theme: roxo-hugo
