@@ -4,8 +4,6 @@
   <url>
     <loc>http://globalgov.ch/blog/working-with-manystates-data/</loc>
   </url><url>
-    <loc>http://globalgov.ch/portfolio/panarchic/</loc>
-  </url><url>
     <loc>http://globalgov.ch/blog/how-do-environmental-treaties-connect/</loc>
   </url><url>
     <loc>http://globalgov.ch/portfolio/manydata/</loc>
@@ -35,5 +33,7 @@
     <loc>http://globalgov.ch/portfolio/</loc>
   </url><url>
     <loc>http://globalgov.ch/tags/</loc>
+  </url><url>
+    <loc>http://globalgov.ch/about/panarchic/</loc>
   </url>
 </urlset>

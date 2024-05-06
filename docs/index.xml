@@ -16,15 +16,6 @@
     </item>
     
     <item>
-      <title>The PANARCHIC Project</title>
-      <link>http://globalgov.ch/portfolio/panarchic/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://globalgov.ch/portfolio/panarchic/</guid>
-      <description>Led by Dr. James Hollway, hosted at the Centre for International and Environmental Studies (CIES), and funded by the Swiss National Science Foundation (SNSF), the &amp;ldquo;PANARCHIC: Power and Networks and the Rate of Change in Institutional Complexes&amp;rdquo; project has started in Semptember 2020.</description>
-    </item>
-    
-    <item>
       <title>How Do Environmental Treaties Connect?</title>
       <link>http://globalgov.ch/blog/how-do-environmental-treaties-connect/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -95,6 +86,15 @@ What about country memberships in environmental treaties, are you interested in 
       
       <guid>http://globalgov.ch/portfolio/manyenviron_data/</guid>
       <description> </description>
+    </item>
+    
+    <item>
+      <title>The PANARCHIC Project</title>
+      <link>http://globalgov.ch/about/panarchic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://globalgov.ch/about/panarchic/</guid>
+      <description>Led by Dr. James Hollway, hosted at the Centre for International and Environmental Studies (CIES), and funded by the Swiss National Science Foundation (SNSF), the &amp;ldquo;PANARCHIC: Power and Networks and the Rate of Change in Institutional Complexes&amp;rdquo; project has started in Semptember 2020.</description>
     </item>
     
   </channel>
