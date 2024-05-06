@@ -21,3 +21,28 @@ members  :
     website     : https://www.graduateinstitute.ch/discover-institute/jael-tan
     linkedin    : https://www.linkedin.com/in/jael-t-a28967126
     github      : https://github.com/jaeltan
+  
+  - image       : images/team/bernhard_bieri.jpg
+    name        : Berhhard Bieri
+    designation : Alumni
+    website     : https://bernhardbieri.ch/
+    linkedin    : https://www.linkedin.com/in/bernhard-bieri/
+    github      : https://github.com/BBieri
+
+  - image       : images/team/esther_peev.jpg
+    name        : Esther Peev
+    designation : Alumni
+    linkedin    : https://www.linkedin.com/in/esther-peev-010427152/
+    github      : https://github.com/EstherPeev
+    
+  - image       : images/team/diego.jpg
+    name        : Diego Del Moral Suarez 
+    designation : Alumni
+    linkedin    : https://www.linkedin.com/in/delmoralsu/?locale=en_US
+    github      : https://github.com/delmoralsu
+
+  - image       : images/team/anders_viemose.jpg
+    name        : Anders Viemose
+    designation : Alumni
+    linkedin    : https://www.linkedin.com/in/anders-v-1a5927130/
+    github      : https://github.com/AndersIHEID

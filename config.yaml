@@ -43,9 +43,9 @@ params:
   call_to_action:
     background_image: images/backgrounds/cta-background.jpg
     enable: yes
-    primary_button: Contact us
+    primary_button: Contact
     primary_button_url: contact
-    secondary_button: About us
+    secondary_button: About
     secondary_button_url: about
     title: Want to learn more?
   contactForm:
