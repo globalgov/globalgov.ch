@@ -43,11 +43,11 @@ params:
   call_to_action:
     background_image: images/backgrounds/cta-background.jpg
     enable: yes
-    primary_button: Submit Query
+    primary_button: Contact us
     primary_button_url: contact
-    secondary_button: Not Convinced
-    secondary_button_url: portfolio
-    title: Get in touch with us!
+    secondary_button: About us
+    secondary_button_url: about
+    title: Want to learn more?
   contactForm:
     placeholder_about_the_project: Message
     placeholder_email: Email
