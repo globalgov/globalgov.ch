@@ -1,5 +1,5 @@
 ---
-description: 'The possibilities of what we can do with global governance data are endless!'
+description: Examples of what you can do with GGO data
 title: GGO Blog
 ---
 
