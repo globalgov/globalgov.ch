@@ -1,25 +1,32 @@
 ---
 title: "About Us"
-heading : "We are the Geneva Global Governance Observatory"
+heading : "The Geneva Global Governance Observatory"
 ---
 
-Led by [Dr. James Hollway](https://jameshollway.com/), hosted at the [Centre for International and Environmental Studies (CIES)](https://www.graduateinstitute.ch/cies), and funded by the [Swiss National Science Foundation (SNSF)](https://data.snf.ch/grants/grant/188976), the 'PANARCHIC: Power and Networks and the Rate of Change in Institutional Complexes' project began in Semptember 2020.
+Funded by the [Swiss National Science Foundation (SNSF)](https://data.snf.ch/grants/grant/188976), and hosted at the [Centre for International and Environmental Studies (CIES)](https://www.graduateinstitute.ch/cies), the [PANARCHIC: Power and Networks and the Rate of Change in Institutional Complexes](https://panarchic.ch/) project began in September 2020.
+Its aim: to contribute three pillars -- theory, method, and empirics -- to the comparative analysis of institutional (aka regime or governance) complexity.
+The Global Governance Observatory is the repository for the empirical collections of the project.
 
-Institutional complexes change through states’ interdependent decisions to join, reform, or create international institutions. Rendering these decisions in the form of a network enables the leveraging of network theory and network methods. Network and power analysis can both help us understand how the rate of change in these dependent variables may differ across the institutional complex, rendered as a network. Network analysis makes more precise institutionalist suggestions that denser, overlapping institutional complexes might slow down institutional changes. Power analysis reminds both institutional and network analysis that powerful actors can act or force others to act where others cannot. Combining these literatures promises to provide a more nuanced theory of the rate of institutional change. The project plans to study the effects of network and power on how quickly states join, reform, or create international institutions by examining the historical dynamics of three institutional networks from different trade, environment, and health. Alongside theoretical contributions, the project collected lots of data on global governance and developed methods to facilitate that users download, connect, and correct this data as they choose. All of the data and methods are publicly available in the form of R packages.
+The Global Governance Observatory collects and extends existing datasets on global governance in various domains,
+arraying them in ensembles that enable users to employ sophisticated, nuanced, robust, and replicable analyses.
 
-Currently there are 4 data packages:
+Tools to download and work with the data are available in R via [manydata](https://manydata.ch/). 
+This package is in turn supported by [manypkgs](https://globalgov.github.io/manypkgs/), for creating and extending manydata packages, 
+and [messydates](https://globalgov.github.io/messydates/), for working with a more flexible class of dates in R.
+Currently there are 5 data packages available through the [manydata](https://manydata.ch/) package:
 
-- [manyenviron](https://github.com/globalgov/manyenviron)
-- [manytrade](https://github.com/globalgov/manytrade)
+- [manystates](https://globalgov.github.io/manystates/)
+- [manyenviron](https://globalgov.github.io/manyenviron/)
+- [manytrade](https://globalgov.github.io/manytrade/)
 - [manyhealth](https://globalgov.github.io/manyhealth/)
-- [manystates](https://github.com/globalgov/manystates)
+- [manyigos](https://globalgov.github.io/manyigos/)
 
-The methodological packages include:
+Also supported by the project is development on 3 network methodological packages:
 
-- [manydata](https://manydata.ch/)
-- [messydates](https://globalgov.github.io/messydates/)
-- [manypkgs](https://globalgov.github.io/manypkgs/)
 - [manynet](https://stocnet.github.io/manynet/)
 - [migraph](https://stocnet.github.io/migraph/)
+- [goldfish](https://stocnet.github.io/goldfish/)
 
-Please make sure to check them out and let us know how we can help further!
+While this website is a work-in-progress, 
+these projects are nearing maturity, and are intended to be useful beyond the project,
+so please check them out and let us know how they meet or diverge from your expectations.
