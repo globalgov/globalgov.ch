@@ -28,7 +28,7 @@ params:
     heading: Geneva Global Governance Observatory
     primary_button: Blog posts
     primary_button_url: blog
-    secondary_button: GGO Data
+    secondary_button: GGO data
     secondary_button_url: portfolio
   blog:
     read_more: read more
@@ -58,7 +58,7 @@ params:
   fabform: https://fabform.io/f/USAg2Jl
   footer:
     contactInfo:
-      email: info@globalgov.ch
+      email: https://github.com/globalgov
       title: Contact Info
     service:
       description: We develop and maintain ‘many’ packages containing data on actors and institutions of global governance
