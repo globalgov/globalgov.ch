@@ -1,12 +1,12 @@
 enable : true
-heading : "The GGO holds the largest publicly available collection of data across various issues-domains of global governance"
+heading : "The GGO holds the largest publicly available collection of overlapping global governance data"
 tag : "an initiative of the PANARCHIC project funded by the Swiss National Science Foundation"
 counter_item: 
   - title: "States"
-    number: "34000+ observations on state regimes across 4 datasets"
+    number: "575+ states from 301 CE incl. geographic, political, and economic variables"
   - title: "Trade"
-    number: "18000+ observations on memberships to trade agreements across 3 datasets"
+    number: "1,750 unique trade agreements and 9,000+ unique memberships from 7 datasets"
   - title: "Environment"
-    number: "16000+ observations on environmental agreements across 6 datasets"
+    number: "10,300+ unique environmental agreements and 80,000+ unique memberships from 6 datasets"
   - title: "Health"
-    number: "500+ observations on health organizations across 3 datasets"
+    number: "250+ agreements, 39,000 memberships, and 200+ health organizations from 3 datasets"
