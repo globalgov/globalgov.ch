@@ -8,4 +8,4 @@ output:
     toc: false
 ---
 
-<iframe height="1000" width="100%" frameborder="no" src="https://globalgov.github.io/manystates/articles/manystates_data.html"> </iframe>
+<iframe height="1200" width="120%" frameborder="no" src="https://globalgov.github.io/manystates/articles/manystates_data.html"> </iframe>

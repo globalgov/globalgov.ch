@@ -8,7 +8,7 @@ output:
     toc: false
 ---
 
-<iframe height="1000" width="100%" frameborder="no" src="https://globalgov.github.io/manyenviron/articles/connect.html"> </iframe>
+<iframe height="1200" width="120%" frameborder="no" src="https://globalgov.github.io/manyenviron/articles/connect.html"> </iframe>
 
 </br>
 </br>
@@ -18,7 +18,7 @@ output:
 </br>
 </br>
 
-<iframe height="800" width="100%" frameborder="no" src="https://genevaglobalgov.shinyapps.io/lineage/"> </iframe>
+<iframe height="800" width="120%" frameborder="no" src="https://genevaglobalgov.shinyapps.io/lineage/"> </iframe>
 
 </br>
 </br>
@@ -28,4 +28,4 @@ output:
 </br>
 </br>
 
-<iframe height="800" width="100%" frameborder="no" src="https://genevaglobalgov.shinyapps.io/memberships/"> </iframe>
+<iframe height="800" width="120%" frameborder="no" src="https://genevaglobalgov.shinyapps.io/memberships/"> </iframe>
