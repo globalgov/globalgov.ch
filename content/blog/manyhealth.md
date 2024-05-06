@@ -1,6 +1,5 @@
 ---
-feature_image: images/blog/dheart.jpg
-image: images/blog/health-icons.jpg
+image: images/blog/dheart.jpg
 title: "What does health governance in Geneva looks like?"
 subtitle: "We use manyhealth data on organizations to investigate this question."
 weight: 3

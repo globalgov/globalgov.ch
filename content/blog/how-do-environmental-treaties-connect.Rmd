@@ -1,6 +1,5 @@
 ---
-feature_image: images/blog/tree.png
-image: images/blog/leaves-continent.jpg
+image: images/blog/tree.png
 title: "How do environmental treaties build upon each other?"
 subtitle: "We use manyenviron data on environmental treaties to illustrate how they are linked."
 weight: 2
