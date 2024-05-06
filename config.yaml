@@ -42,9 +42,9 @@ params:
   call_to_action:
     background_image: images/backgrounds/cta-background.jpg
     enable: yes
-    primary_button: Contact
+    primary_button: Contact us
     primary_button_url: contact
-    secondary_button: About
+    secondary_button: About us
     secondary_button_url: about
     title: Want to learn more?
   contactForm:
@@ -54,15 +54,15 @@ params:
     placeholder_last_name: Last Name
     send_message: Send Message
   dateFormat: 26 FEB 1994
-  description: The largest repository of Global Governance Data
+  description: The largest repository of global governance data
   fabform: https://fabform.io/f/USAg2Jl
   footer:
     contactInfo:
       email: info@globalgov.ch
       title: Contact Info
     service:
-      description: 'We develop and maintain ‘many’ packages containing data on actors and institutions of global governance!'
-      title: Providing data across various issue domains of Global Governance
+      description: We develop and maintain ‘many’ packages containing data on actors and institutions of global governance
+      title: Providing data across various issue domains of global governance
     sitemap:
       link:
         - name: About
