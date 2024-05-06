@@ -1,3 +1,3 @@
 ---
-title: Providing data across various issue domains of Global Governance
+title: Providing data across various issue domains of global governance
 ---

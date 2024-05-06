@@ -1,26 +1,18 @@
 enable  : true
 title   : Our packages
 honeycomb_item :
-  - thumb : images/clients/manynet.png
-    name : "manynet"
-    company_position: "Many Ways to Make, Manipulate, and Map Myriad Networks"
-    website :  "https://stocnet.github.io/manynet/"
-  - thumb : images/clients/messydates.png
-    name : "messydates"
-    company_position: "R package for Extended Date/Time Format (EDTF)"
-    website :  "https://globalgov.github.io/messydates/"
-  - thumb : images/clients/migraph.png
-    name : "migraph"
-    company_position: "Tools for multimodal and multilevel network analysis"
-    website :  "https://stocnet.github.io/migraph/"
   - thumb : images/clients/manydataLogo.png
     name : "manydata"
     company_position: "The portal for global governance data"
     website :  "https://globalgov.github.io/manydata/"
-  - thumb : images/clients/manypkgslogo.png
-    name : "manypkgs"
-    company_position: "Support for creating new manyverse packages"
-    website :  "https://globalgov.github.io/manypkgs/"
+  - thumb : images/clients/messydates.png
+    name : "messydates"
+    company_position: "R package for Extended Date/Time Format (EDTF)"
+    website :  "https://globalgov.github.io/messydates/"
+  - thumb : images/clients/manystates_hexlogo.png
+    name : "manystates"
+    company_position: "Data on sovereign states"
+    website :  "https://globalgov.github.io/manystates/"
   - thumb : images/clients/manyenviron_hexlogo.png
     name : "manyenviron"
     company_position: "Data on environmental agreements"
@@ -33,7 +25,15 @@ honeycomb_item :
     name : "manyhealth"
     company_position: "Data on health agreements"
     website :  "https://globalgov.github.io/manyhealth/"
-  - thumb : images/clients/manystates_hexlogo.png
-    name : "manystates"
-    company_position: "Data on sovereign states"
-    website :  "https://globalgov.github.io/manystates/"
+  - thumb : images/clients/manynet.png
+    name : "manynet"
+    company_position: "Many Ways to Make, Manipulate, and Map Myriad Networks"
+    website :  "https://stocnet.github.io/manynet/"
+  - thumb : images/clients/migraph.png
+    name : "migraph"
+    company_position: "Tools for multimodal and multilevel network analysis"
+    website :  "https://stocnet.github.io/migraph/"
+  - thumb : images/clients/manypkgslogo.png
+    name : "manypkgs"
+    company_position: "Support for creating new manyverse packages"
+    website :  "https://globalgov.github.io/manypkgs/"
