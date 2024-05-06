@@ -10,7 +10,7 @@ members  :
 
   - image       : images/team/henrique_sposito.jpg
     name        : Henrique Sposito
-    designation : Reasearch Assistant
+    designation : Research Assistant
     website     : https://henriquesposito.com/
     linkedin    : https://www.linkedin.com/in/henrique-sposito-11b84282
     github      : https://github.com/henriquesposito
@@ -23,26 +23,26 @@ members  :
     github      : https://github.com/jaeltan
   
   - image       : images/team/bernhard_bieri.jpg
-    name        : Berhhard Bieri
-    designation : Alumni
+    name        : Bernhard Bieri
+    designation : Alumnus, 2022
     website     : https://bernhardbieri.ch/
     linkedin    : https://www.linkedin.com/in/bernhard-bieri/
     github      : https://github.com/BBieri
 
   - image       : images/team/esther_peev.jpg
     name        : Esther Peev
-    designation : Alumni
+    designation : Alumna, 2022
     linkedin    : https://www.linkedin.com/in/esther-peev-010427152/
     github      : https://github.com/EstherPeev
     
   - image       : images/team/diego.jpg
     name        : Diego Del Moral Suarez 
-    designation : Alumni
+    designation : Alumnus, 2023
     linkedin    : https://www.linkedin.com/in/delmoralsu/?locale=en_US
     github      : https://github.com/delmoralsu
 
   - image       : images/team/anders_viemose.jpg
     name        : Anders Viemose
-    designation : Alumni
+    designation : Alumnus, 2023
     linkedin    : https://www.linkedin.com/in/anders-v-1a5927130/
     github      : https://github.com/AndersIHEID
