@@ -1,4 +1,4 @@
-baseURL: http://globalgov.ch
+baseURL: https://globalgov.ch/
 languageCode: en-us
 title: Geneva Global Governance Observatory
 theme: roxo-hugo
@@ -42,10 +42,10 @@ params:
   call_to_action:
     background_image: images/backgrounds/cta-background.jpg
     enable: yes
-    primary_button: Contact us
-    primary_button_url: contact
-    secondary_button: About us
-    secondary_button_url: about
+    primary_button: About us
+    primary_button_url: about
+    secondary_button: Contact us
+    secondary_button_url: contact
     title: Want to learn more?
   contactForm:
     placeholder_about_the_project: Message
@@ -58,11 +58,11 @@ params:
   fabform: https://fabform.io/f/USAg2Jl
   footer:
     contactInfo:
-      email: https://github.com/globalgov
       title: Contact Info
+      email: https://github.com/globalgov/
     service:
-      description: We develop and maintain ‘many’ packages containing data on actors and institutions of global governance
       title: Providing data across various issue domains of global governance
+      description: We develop and maintain ‘many’ packages containing data on actors and institutions of global governance
     sitemap:
       link:
         - name: About
