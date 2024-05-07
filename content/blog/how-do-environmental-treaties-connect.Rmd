@@ -1,7 +1,7 @@
 ---
 image: images/blog/tree.png
 title: "How are environmental treaties related to one another?"
-subtitle: "manyenviron data on environmental treaties illustrates that treaties concerned with different issues (from wildlife conservation to river basins), with varying membership (bilateral or multilateral), or originating in different regions are linked to one another."
+subtitle: "manyenviron data on environmental treaties illustrates that treaties concerned with different issues, with varying membership, or originating in different regions are linked to one another."
 weight: 2
 output:
   blogdown::html_page:
