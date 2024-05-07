@@ -23,7 +23,7 @@ menu:
 params:
   author: GLOBALGOV
   banner:
-    background_image: images/backgrounds/network2.jpg 
+    background_image: images/backgrounds/network3.jpg 
     enable: yes
     heading: Geneva Global Governance Observatory
     primary_button: Blog posts
