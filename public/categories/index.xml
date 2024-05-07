@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Geneva Global Governance Observatory</title>
-    <link>http://globalgov.ch/categories/</link>
+    <link>https://globalgov.ch/categories/</link>
     <description>Recent content in Categories on Geneva Global Governance Observatory</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://globalgov.ch/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://globalgov.ch/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

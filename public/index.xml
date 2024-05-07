@@ -2,88 +2,88 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Geneva Global Governance Observatory</title>
-    <link>http://globalgov.ch/</link>
+    <link>https://globalgov.ch/</link>
     <description>Recent content on Geneva Global Governance Observatory</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://globalgov.ch/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://globalgov.ch/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Have democracies become more free and accountable since the 1990s?</title>
-      <link>http://globalgov.ch/blog/working-with-manystates-data/</link>
+      <link>https://globalgov.ch/blog/working-with-manystates-data/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://globalgov.ch/blog/working-with-manystates-data/</guid>
+      <guid>https://globalgov.ch/blog/working-with-manystates-data/</guid>
       <description> </description>
     </item>
     
     <item>
       <title>How do environmental treaties build upon each other?</title>
-      <link>http://globalgov.ch/blog/how-do-environmental-treaties-connect/</link>
+      <link>https://globalgov.ch/blog/how-do-environmental-treaties-connect/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://globalgov.ch/blog/how-do-environmental-treaties-connect/</guid>
+      <guid>https://globalgov.ch/blog/how-do-environmental-treaties-connect/</guid>
       <description> Want to try yourself? Please feel free to play with data on environmental treaties lineages. Interested in country memberships in environmental treaties? </description>
     </item>
     
     <item>
       <title>How to get GGO Data</title>
-      <link>http://globalgov.ch/portfolio/manydata/</link>
+      <link>https://globalgov.ch/portfolio/manydata/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://globalgov.ch/portfolio/manydata/</guid>
+      <guid>https://globalgov.ch/portfolio/manydata/</guid>
       <description> </description>
     </item>
     
     <item>
       <title>States and Governance Indicators</title>
-      <link>http://globalgov.ch/portfolio/manystates/</link>
+      <link>https://globalgov.ch/portfolio/manystates/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://globalgov.ch/portfolio/manystates/</guid>
+      <guid>https://globalgov.ch/portfolio/manystates/</guid>
       <description> </description>
     </item>
     
     <item>
       <title>What does health governance in Geneva looks like?</title>
-      <link>http://globalgov.ch/blog/manyhealth/</link>
+      <link>https://globalgov.ch/blog/manyhealth/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://globalgov.ch/blog/manyhealth/</guid>
+      <guid>https://globalgov.ch/blog/manyhealth/</guid>
       <description> </description>
     </item>
     
     <item>
       <title>How to match agreements across different datasets?</title>
-      <link>http://globalgov.ch/blog/manypkgs/</link>
+      <link>https://globalgov.ch/blog/manypkgs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://globalgov.ch/blog/manypkgs/</guid>
+      <guid>https://globalgov.ch/blog/manypkgs/</guid>
       <description> </description>
     </item>
     
     <item>
       <title>Trade Agreements</title>
-      <link>http://globalgov.ch/portfolio/manytrade/</link>
+      <link>https://globalgov.ch/portfolio/manytrade/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://globalgov.ch/portfolio/manytrade/</guid>
+      <guid>https://globalgov.ch/portfolio/manytrade/</guid>
       <description> </description>
     </item>
     
     <item>
       <title>Health Agreements</title>
-      <link>http://globalgov.ch/portfolio/manyhealth/</link>
+      <link>https://globalgov.ch/portfolio/manyhealth/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://globalgov.ch/portfolio/manyhealth/</guid>
+      <guid>https://globalgov.ch/portfolio/manyhealth/</guid>
       <description> </description>
     </item>
     
     <item>
       <title>Environmental Treaties</title>
-      <link>http://globalgov.ch/portfolio/manyenviron_data/</link>
+      <link>https://globalgov.ch/portfolio/manyenviron_data/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://globalgov.ch/portfolio/manyenviron_data/</guid>
+      <guid>https://globalgov.ch/portfolio/manyenviron_data/</guid>
       <description> </description>
     </item>
     
