@@ -1,7 +1,7 @@
 ---
 image: images/blog/hand-shake.png
-title: "How central is international Geneva to global health governance?"
-subtitle: "manyhealth data shows that there is a wide range of agreements contributing to the global governance of health, from formal human rights and labour conventions to informal agreements on healthcare provisions. Yet, the majority of actors and agreements involved in global health governance are concentrated in a few cities, especially in Geneva, although these agreements have an impact across many different issues and places."
+title: "How central is international Geneva in global health governance?"
+subtitle: "manyhealth data shows that most actors and agreements involved in health governance are concentrated in a few cities, especially in Geneva. These actors and agreements have an impact across many places and issues, from formal rights conventions to informal agreements on healthcare."
 weight: 3
 output:
   blogdown::html_page:
