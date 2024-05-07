@@ -1,7 +1,7 @@
 ---
-image: images/blog/dheart.jpg
-title: "What does health governance in Geneva looks like?"
-subtitle: "We use manyhealth data on organizations to investigate this question."
+image: images/blog/hand-shake.png
+title: "How central is international Geneva to global health governance?"
+subtitle: "manyhealth data shows that there is a wide range of agreements contributing to the global governance of health, from formal human rights and labour conventions to informal agreements on healthcare provisions. Yet, the majority of actors and agreements involved in global health governance are concentrated in a few cities, especially in Geneva, although these agreements have an impact across many different issues and places."
 weight: 3
 output:
   blogdown::html_page:

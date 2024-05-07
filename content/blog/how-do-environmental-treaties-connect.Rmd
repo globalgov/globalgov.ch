@@ -1,7 +1,7 @@
 ---
 image: images/blog/tree.png
-title: "How do environmental treaties build upon each other?"
-subtitle: "We use manyenviron data on environmental treaties to illustrate how they are linked."
+title: "How are environmental treaties related to one another?"
+subtitle: "We use manyenviron data on environmental treaties to illustrate how they are linked. Treaties concerned with different issues (from wildlife conservation to protection of river basins), with varying membership scopes (bilateral or multilateral), or originating in different regions can also influence or be related to one another."
 weight: 2
 output:
   blogdown::html_page:
