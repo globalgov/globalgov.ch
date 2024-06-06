@@ -25,11 +25,11 @@ honeycomb_item :
     name : "manyhealth"
     company_position: "Data on health agreements"
     website :  "https://globalgov.github.io/manyhealth/"
-  - thumb : images/clients/manynet.png
+  - thumb : images/clients/manynet_logo.png
     name : "manynet"
     company_position: "Many Ways to Make, Manipulate, and Map Myriad Networks"
     website :  "https://stocnet.github.io/manynet/"
-  - thumb : images/clients/migraph.png
+  - thumb : images/clients/migraph_logo.png
     name : "migraph"
     company_position: "Tools for multimodal and multilevel network analysis"
     website :  "https://stocnet.github.io/migraph/"
